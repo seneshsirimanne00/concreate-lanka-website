@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1920px) {
+
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1366px) {
+
+	
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px) {
+
+
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+
+
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1024px) {
+
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px) {
+
+	
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 375px) {
+
+
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 360px) {
+
+
+
+}
+
+
+@media only screen and (max-width : 320px) {
+
+
+
+}

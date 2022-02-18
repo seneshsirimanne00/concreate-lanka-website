@@ -1,0 +1,19 @@
+/* homepage css */
+
+/* homepage css end */
+
+
+/* Inner pages css */
+.inner_back{
+background-image: url('../images/inner_background.png');
+height: 100%;
+}
+
+.inner_page_shape{                                      
+background-image: url('../images/inner_shape.png'); 
+position: absolute;
+top: 100px;
+right: 0px;    
+}
+
+/* Inner pages css end */
