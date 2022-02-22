@@ -1,5 +1,39 @@
 /* homepage css */
 
+.top-logo{
+    position: fixed;
+    float: left;
+    top: 10px;
+    left: 30px;
+    z-index: 9;
+}
+
+h1{
+    color: #292A77;
+}
+
+p{
+    color: #2F2B2B;
+    font-weight: lighter;
+}
+
+.product-row{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+
+.product-text{
+    padding: 0px 137px;
+}
+
+.projects_row{
+    height: 650px;
+    background-color: #F2F3EF;
+    padding-top: 70px;
+}
+
+
 /* homepage css end */
 
 
@@ -13,7 +47,14 @@ height: 100%;
 background-image: url('../images/inner_shape.png'); 
 position: absolute;
 top: 100px;
-right: 0px;    
+right: 0px;     
 }
 
 /* Inner pages css end */
+
+
+
+
+/* Inner page product css */
+
+/* Inner pages product css end */
