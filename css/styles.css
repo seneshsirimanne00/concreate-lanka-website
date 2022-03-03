@@ -1,4 +1,7 @@
 /* homepage css */
+html{
+    overflow-x: hidden;
+}
 
 .top-logo{
     position: fixed;
@@ -28,10 +31,122 @@ p{
 }
 
 .projects_row{
-    height: 650px;
+    height: 900px;
     background-color: #F2F3EF;
     padding-top: 70px;
+    padding-bottom: 70px;
 }
+.project_slide_text1{
+    padding:0px 200px;
+    position: relative;
+    right: 120px;
+    
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.slider_arrow_projects_left{
+    
+    left: 200px;
+}
+.slider_arrow_projects_right{
+    
+right: -50px;
+}
+
+.project_slide_text2{
+    padding:0px 200px;
+    position: relative;
+    right: 120px;
+    
+}
+.project_slide_text3{
+    padding:0px 200px;
+    position: relative;
+    right: 120px;
+    
+}
+.projects_slide_home{
+   
+    
+    height: 100%;
+    position: relative;
+    left: 30px;
+}
+
+
+
+.splide__pagination{
+    left: 300px;
+
+}
+
+.project_slice_whitebox{
+    background-image: url('../images/project_slide_whitebox.png');
+height: 100%;
+background-repeat: no-repeat;
+position: relative;
+left: 250px;
+padding-top: 100px;
+
+
+}
+
+.project_slider_image{
+    position: relative;
+    top: 70px;
+    left: 90px;
+    z-index: 8;
+}
+
+.pagination{
+    margin: 30px;
+
+}
+
+.client_text{
+    text-align: center;
+    width: 700px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.client_line{
+    width: 500px ;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #F2F3EF;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+    border-bottom: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 26px;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.contact_box{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 200px auto;
+}
+
+.contact_float{
+    
+    width: 50%;
+}
+
+
+
+
 
 
 /* homepage css end */

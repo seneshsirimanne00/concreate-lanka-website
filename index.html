@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<!-- this is a comment -->
+<!-- this is a comment --><link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAf4QHAJVgFgCuYSoApVQpAKdnFgB1ShEAp1cpAK1hKQDx6dQAnGMWAK5qHQCzaSYAqqEXAP///wCLWRQAspgcAKRSKwCrXSkAoGIXAI9ZFAChTS4AnogZAKCXFQCuahsApFEsAKpcKgCyaSQAsmcoAKhZKQCvYykAdkoOAKZWKADdv5gAnGIVALt+IQB+dgsAsWYpALaOGgDl1qwApWgWAP78+wC2bh8AqGgWAO3d1AC7fiAAqq48ALBlKgCiihkAsm5UAPnz8QCoqhQAqlspALBlKQB9dQsAtJUeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4ODg4ODg4ODg4ODg4OAAAODg4ODg4OMg4ODg4ODgAADg4ODg4sGRUVDg4ODg4AAA4ODg41CBoHESQwDg4OAAAODiIFCxslDgEXECYODgAADjMGDworDg4ODhAmDg4AAA4zNyMODg4ODg4ODg4OAAAOMzctDg4ODg4ODg4ODgAADjM3LQ4ODg4ODg4ODg4AAA4zNy0ODg4ODg4ODg4OAAAOMx8UEykODg4OECcODgAADg4CKBgbLw4uDRAmDg4AAA4ODiEqDB4SIDYWCQ4OAAAODg4ODhwDNAQxDg4ODgAADg4ODg4ODh0ODg4ODg4AAA4ODg4ODg4ODg4ODg4OAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAAA=" rel="icon" type="image/x-icon" />
 <!-- this is a comment -->
 
 <!-- bootstrap version 5 css -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <!-- bootstrap version 5 css -->
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Add icon library -->
+
+<!-- infinity slider styles css -->
+<link rel="stylesheet" href="splide.min.js/splide.min.css">
+<!-- infinity slider styles css -->
 
 <!-- styles css -->
 <link href="css/styles.css" rel="stylesheet">
 <!-- styles css -->
+
+
 
 <!--media query css-->
 <link href="css/mediaquery.css" rel="stylesheet" type="text/css" media="screen">
@@ -28,6 +39,7 @@
 <body>
 
 <img src="images/desktop_logo.png" class="top-logo" alt="Logo">
+
 
 <!-- land screen section -->
 
@@ -96,10 +108,89 @@
     <div class="container-fluid" >
         <div class="row projects_row">
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-            <img src="images/homepage_pro_1.png" class="img-fluid" alt="...">
-            <img src="images/homepage_pro_2.png" class="img-fluid" alt="...">
+            <div class="splide splide2">
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev slider_arrow_projects_left">
+                  Prev
+                </button>
+                <button class="splide__arrow splide__arrow--next slider_arrow_projects_right">
+                  Next
+                </button>
+              </div>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide projects_slide_home">
+                    <img src="images/project_img.png" alt="" class="project_slider_image">
+                    <div class="project_slice_whitebox">
+                      <p class="project_slide_text1">Avicci</p>
+                      <p class="project_slide_text2">2022.01.23</p>
+                    <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify; " class="project_slide_text3">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+                       consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                      </div>
+                  </li>
+
+                  <li class="splide__slide projects_slide_home">
+                    <img src="images/project_img.png" alt="" class="project_slider_image">
+                    <div class="project_slice_whitebox">
+                      <p class="project_slide_text1">Avicci</p>
+                      <p class="project_slide_text2">2022.01.23</p>
+                    <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify; " class="project_slide_text3">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+                       consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                      </div>
+                  </li>
+
+                  <li class="splide__slide projects_slide_home">
+                    <img src="images/project_img.png" alt="" class="project_slider_image">
+                    <div class="project_slice_whitebox">
+                      <p class="project_slide_text1">Avicci</p>
+                      <p class="project_slide_text2">2022.01.23</p>
+                    <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify; " class="project_slide_text3">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+                       consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                      </div>
+                  </li>
+
+                  <li class="splide__slide projects_slide_home">
+                    <img src="images/project_img.png" alt="" class="project_slider_image">
+                    <div class="project_slice_whitebox">
+                      <p class="project_slide_text1">Avicci</p>
+                      <p class="project_slide_text2">2022.01.23</p>
+                    <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify; " class="project_slide_text3">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+                       consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                      </div>
+                  </li>
+                 
+                </ul>
+
+                <ul class="splide__pagination">
+                  <li>
+                    <button
+                      class="splide__pagination__page is-active"
+                      type="button"
+                      aria-controls="splide01-slide01"
+                      aria-label="Go to slide 1"
+                      aria-current="true"
+                    >
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="splide__pagination__page"
+                      type="button"
+                      aria-controls="splide01-slide02"
+                      aria-label="Go to slide 2"
+                    >
+                    </button>
+                  </li>
+                  ......
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 product-text"> 
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 product-text" style="padding-top: 100px;"> 
             <h1 data-aos="fade-up" data-aos-duration="1500">Products <span style="color: #898989;">Overview</span></h1>
             <hr data-aos="fade-right"
             data-aos-offset="300"
@@ -118,29 +209,164 @@
 
 <!-- homepage clients section -->
     <div class="container" data-aos="fade-up" data-aos-duration="1500">
-        <div class="row">
-          <div class="col-sm-5">col-sm-8</div>
+        <div class="row client_text" style="">
+          
+            <h1 data-aos="fade-up" data-aos-duration="1500">Products <span style="color: #898989;">Overview</span></h1>
+            <hr data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" style="" class="client_line">
+            <p data-aos="fade-up" data-aos-duration="2000" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+               consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+               <br>
+            
+          
           
         </div>
-    </div>
+      
+        <div class="row">
+          <div class="splide splide1">
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev d-none">
+                Prev
+              </button>
+              <button class="splide__arrow splide__arrow--next d-none">
+                Next
+              </button>
+            </div>
+            
+            
+            <div class="splide__track">
+              
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="images/client_logo1.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo2.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo3.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo2.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo4.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo5.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo1.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo2.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo3.png" alt=""></li>
+                <li class="splide__slide"><img src="images/client_logo1.png" alt=""></li>
+               
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        </div>
+    
 <!-- homepage clients section end -->
 
 <!-- homepage testimonials section -->
-    <div class="container" data-aos="fade-up" data-aos-duration="1500">
-        <div class="row">
-          <div class="col-sm-8">col-sm-8</div>
-          <div class="col-sm-4">col-sm-4</div>
-        </div>
-    </div>
+<!-- homepage clients section -->
+<div class="container" data-aos="fade-up" data-aos-duration="1500">
+  <div class="row " style="">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 product-text" style="padding-top: 100px;"> 
+    
+      <p data-aos="fade-up" data-aos-duration="1500" class="">What Our <br>
+        Customer say.</p>
+      </div>
+      
+    
+    
+  </div>
+
+  <div class="row">
+    
+  </div>
+  </div>
+    
 <!-- homepage testimonials section end -->
 
 <!-- footer section -->
-<div class="container" data-aos="fade-up" data-aos-duration="1500">
-    <div class="row">
-      <div class="col-sm-8">col-sm-8</div>
-      <div class="col-sm-4">col-sm-4</div>
+
+<div style="z-index: 900;">
+    <div class="row projects_row" style=" height: 100vh;">
+     
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5"> 
+      
+      <div class="container contact_box" data-aos="fade-up" data-aos-duration="2000">
+        <h1 style="font-weight: bold;">Say hi!</h1>
+        <form action="action_page.php" style="margin-top:20px ;">
+
+          <label for="fname"> Name*</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"> 
+          <label class="" for="cnumber">Phone*</label>
+          <input class=""type="text" id="cnumber" name="cnumber" placeholder="contact number"></div>
+          
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"> 
+          
+          <label class="" for="email">Email*</label>
+          <input class=""type="text" id="email" name="email" placeholder="example@email.com"></div>
+          
+        </div>
+          <label for="subject">Your message*</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+      
+       
+          <button class="button button2" type="submit">Submit<span class="bline">______________</span> </button>
+          
+          
+          
+          
+        </form></div>
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+        <p data-aos="fade-up" data-aos-duration="2000" style="color: #A5A5A5;" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+           consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+           <br>
+          
+        <ul data-aos="fade-up" data-aos-duration="2000">
+          <li>+94 293 21 1240</li>
+          <li>  +94 293 21 1240</li>
+          <li> +94 293 21 1240</li>
+        </ul>
+
+        <br> <p data-aos="fade-up" data-aos-duration="2000">
+          573/3,<br>
+Ward place,<br>
+Colmbo,<br>
+Sri lanka.<br>
+13200.
+        </p>
+      
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2" data-aos="fade-up" data-aos-duration="2000">
+        <ul>
+          <li> home</li>
+          <li> About us</li>
+          <li> Our Products</li>
+          <li> Projects</li>
+          
+
+        </ul>
+
+      </div>
+
+      <h3 style="text-align: center;">All rights reserved 2022</h3>
+      <p  style="margin-left: 20px;font-weight: lighter; font-size: 10px;">solutins by <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>
+      <a href="" target="_blank" class="fa fa-facebook  d-inline"></a>
+              <a href="" target="_blank" class="fa fa-instagram  d-inline"></a>
+              <a href="" target="_blank" class="fa fa-linkedin  d-inline"></a>
+              <a href="" target="_blank" class="fa fa-youtube  d-inline"></a>
     </div>
-</div>
+  </div>
+
 <!-- footer section end -->
 
 
@@ -158,6 +384,86 @@
     AOS.init();
   </script>
 <!-- aos script -->
+
+<!-- splide script -->
+<script src="splide.min.js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.3.7/dist/js/splide-extension-auto-scroll.min.js"></script>
+<script>
+  import Splide from '@splidejs/splide';
+
+  new Splide( '.splide', {
+  classes: {
+		pagination: 'splide__pagination your-class-pagination',
+		page      : 'splide__pagination__page your-class-page',
+  },
+} );
+
+</script>
+
+<script>
+  new Splide( '.splide1' ).mount( window.splide.Extensions );
+</script>
+
+<script>
+
+
+
+
+var splide = new Splide( '.splide1', {
+  type   : 'loop',
+  drag   : 'free',
+  
+  
+  perPage: 4,
+  perMove: 1,
+  
+  autoScroll: {
+    speed: 2,
+  },
+  
+} );
+
+
+
+splide.mount();
+</script>
+
+<script>
+
+
+
+
+
+
+  var splide = new Splide( '.splide2', {
+    type  : 'loop' ,
+  rewind: true,
+  autoplay: true,
+  
+    
+    
+    perPage: 1,
+
+   
+    
+    
+    
+    
+  } );
+
+  
+
+  splide.on( 'pagination:mounted', function( data ) {
+  // data.items contains all dot items
+  data.items.forEach( function( item ) {
+    item.button.textContent = String( item.page + 1 );
+  } );
+} )
+  
+  splide.mount();
+  </script>
+<!-- splide script -->
+
 
 
 </html>
