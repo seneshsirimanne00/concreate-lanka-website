@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
 
 <!-- this is a comment -->
 <!-- this is a comment -->
@@ -26,31 +26,660 @@
 </head>
 <body>
 
+  <!-- back to top button START -->
+  <button onclick="topFunction()" id="back-to-top" title="Go to top">
+    <b>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+  </b>
+  </button>
+
+  <div id="sidebar">
+    <a href="#concrete-spacers" class="home">Concrete spacers</a><br>
+    <a href="#concrete-flooring">Concrete flooring</a><br>
+    <a href="#concrete-paving">Concrete paving</a><br>
+    <a href="#clay-bricks">Clay brick</a><br> 
+  </div>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("back-to-top");
+    var sidebar = document.getElementById("sidebar");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        mybutton.style.display = "block";
+        sidebar.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+        sidebar.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <!-- back to top button END -->
+
 <!-- inner background -->
 <div class="inner_back">
 
-<img src="images/inner_shape.png" alt="inner_shape" class="inner_page_shape" data-aos="fade-left" data-aos-duration="1000">
+  <img src="images/inner_shape.png" alt="inner_shape" class="inner_page_shape" data-aos="fade-left" data-aos-duration="1000">
 
-    <!-- products section -->
+      <div class="row" style="height: 250px;">
+      </div>
 
-    <div class="container" data-aos="fade-up" data-aos-duration="1500">
-        <div class="row">
-          <div class="col-sm-8">col-sm-8</div>
-          <div class="col-sm-4">col-sm-4</div>
+      <!-- Modals -->
+
+      <!-- uni paver modal -->
+      <div class="modal fade" style="z-index: 9000;" id="uniPaverModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uniPaverModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uniPaverModalLabel">Block calculator ( Uni paver )</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                Please enter length and width of the area  <br><br>
+                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
+                <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumber" placeholder="Enter length in feet"/></div><br>
+                <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumber" placeholder="Enter width in feet"/></div><br>
+                <input type="button" class="btn btn-dark" onClick="multiplyBy()" Value="Calculate" />
+                </form>
+                <h6>The required amount of bricks is : 
+                <b><span id = "result"></span></b>
+                </h6>
+                
+                <script>
+                function multiplyBy()
+                {
+                        num1 = document.getElementById("firstNumber").value;
+                        num2 = document.getElementById("secondNumber").value;
+                        document.getElementById("result").innerHTML = (num1 * num2)/10;
+                }
+                </script>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
-    </div>
-<!-- products section end -->
+      </div>  
 
-<!-- products section -->
-    <div class="container" data-aos="fade-up" data-aos-duration="1500">
-        <div class="row">
-          <div class="col-sm-8">col-sm-8</div>
-          <div class="col-sm-4">col-sm-4</div>
+      <!-- uni paver modal -->
+      <div class="modal fade" style="z-index: 9000;" id="honeyCombBlockModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="honeyCombBlockModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="honeyCombBlockModalLabel">Block calculator ( Honey Comb Block )</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                Please enter length and width of the area  <br><br>
+                <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumber" placeholder="Enter length in feet"/></div><br>
+                <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumber" placeholder="Enter width in feet"/></div><br>
+                <input type="button" class="btn btn-dark" onClick="multiplyBy()" Value="Calculate" />
+                </form>
+                <h6>The required amount of bricks is : 
+                <b><span id = "result"></span></b>
+                </h6>
+                
+                <script>
+                function multiplyBy()
+                {
+                        num1 = document.getElementById("firstNumber").value;
+                        num2 = document.getElementById("secondNumber").value;
+                        document.getElementById("result").innerHTML = (num1 * num2)/10;
+                }
+                </script>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
-    </div>
-<!-- products section end -->
+      </div>  
 
-</div>
+      <!-- products 1st section -->
+
+      <div class="container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row products_page_top">
+            <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10" >
+              <h1 data-aos="fade-up" data-aos-duration="1500">Our <span style="color: #898989;">Projects</span></h1>
+                <br>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+                consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " style="align-items: center;">
+
+              <div class="top-card-content" class="img-fluid products_page_top_img" data-aos="fade-right" data-aos-duration="1500">
+                <a href="#concrete-spacers">
+                  <div class="top-card-content-overlay"></div>
+                  <h4 class="top-card-content-main-title" >Concrete spacers</h4>
+                  <img class="top-card-content-image" src="images/top_1.jpg">
+                  <div class="top-card-content-details fadeIn-bottom">
+                    <h5 class="top-card-content-title">Concrete spacers</h5>
+                    <p class="top-card-content-text">This is a short description</p>
+                  </div>
+                </a>
+              </div>
+
+              <br>
+
+              <div class="top-card-content" class="img-fluid products_page_top_img" data-aos="fade-right" data-aos-duration="1500">
+                <a href="#concrete-paving">
+                  <div class="top-card-content-overlay"></div>
+                  <h4 class="top-card-content-main-title" >Concrete paving</h4>
+                  <img class="top-card-content-image" src="images/top_2.png">
+                  <div class="top-card-content-details fadeIn-bottom">
+                    <h5 class="top-card-content-title">Concrete paving</h5>
+                    <p class="top-card-content-text">This is a short description</p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line" style="align-items: center;">
+
+              <div class="top-card-content" class="img-fluid products_page_top_img" data-aos="fade-left" data-aos-duration="1500">
+                <a href="#concrete-flooring">
+                  <div class="top-card-content-overlay"></div>
+                  <h4 class="top-card-content-main-title" >Cement/Concrete Flooring</h4>
+                  <img class="top-card-content-image" src="images/products_page_category_img.png">
+                  <div class="top-card-content-details fadeIn-bottom">
+                    <h5 class="top-card-content-title">Cement/Concrete Flooring</h5>
+                    <p class="top-card-content-text">This is a short description</p>
+                  </div>
+                </a>
+              </div>
+
+              <br>
+
+              <div class="top-card-content" class="img-fluid products_page_top_img" data-aos="fade-left" data-aos-duration="1500">
+                <a href="#clay-bricks">
+                  <div class="top-card-content-overlay"></div>
+                  <h4 class="top-card-content-main-title" >Clay bricks</h4>
+                  <img class="top-card-content-image" src="images/top_4.png">
+                  <div class="top-card-content-details fadeIn-bottom">
+                    <h5 class="top-card-content-title">Clay bricks</h5>
+                    <p class="top-card-content-text">This is a short description</p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+      </div>
+    <!-- products 1st section end -->
+
+
+    <!-- products 2nd section -->
+  <section id="concrete-spacers">
+    <img src="images/inner_page_triangle_shape.png" alt="inner_shape" class="inner_page_triangle_shape" data-aos="zoom-in" data-aos-duration="1000">
+
+      <div class="container" data-aos="fade-up" data-aos-duration="1500">
+          <div class="row products_page_section_two">
+            <h1 data-aos="fade-up" data-aos-duration="1500">Fibre reinforced concrete spacers</h1>
+                <br>
+              <p  data-aos="fade-up" data-aos-duration="2000">"Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                in culpa qui officia deserunt mollit anim id est laborum." </p>
+              <br>
+          </div>
+
+          <div class="row products_page_product_card">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">CIRCULAR SPACER</h3>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">This is used in cylindrical structures 
+                such as spun plies, round columns. This kind of spacers can also be used in the normal structures of beam, slab,wall.
+              </p>
+                <br>
+              <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" >
+                  <!-- <p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p> -->
+                  <div class="product_price_slideshow-container">
+
+                    <div class="product_price_mySlides fade">
+                      <div class="product_price_numbertext">15mm</div>
+                     
+                      <div class="product_price_text">300</div>
+                    </div>
+                    
+                    <div class="product_price_mySlides fade">
+                      <div class="product_price_numbertext">25mm</div>
+                     
+                      <div class="product_price_text">200</div>
+                    </div>
+                    
+                    <div class="product_price_mySlides fade">
+                      <div class="product_price_numbertext">30mm</div>
+                     
+                      <div class="product_price_text">400</div>
+                    </div>
+                    
+                    <a class="product_price_prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="product_price_next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("product_price_mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+            </div>
+          </div>
+
+          <div class="row products_page_product_card">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
+              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">An ideal way of supporting the large 
+                reinforcement of heavy-duty slabs. Supplied in 1 meter lengths. Concrete spacers and bar support help maintain 
+                material integrity and uniformity of the concrete and provide a cover over the reinforcement that protects against 
+                corrosion. 
+              </p>
+                <br>
+              <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" ><p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p></div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row products_page_product_card">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SLAB SPACER</h3>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">A flat-based single or multiple cover concrete spacer block 
+                giving maximum stability in horizontal applications. A cover block is essentially a spacer that is used to lift the rebar matrix off 
+                the ground so that concrete may flow underneath the rebar. Available in different shapes and sizes.
+              </p>
+                <br>
+              <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" ><p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p></div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+            </div>
+          </div>
+
+          <div class="row products_page_product_card">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
+              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Linear Spacers (Π-section profiles, H-section profiles, or other 3 dimensional shapes). 
+                It has a hole to connect attache a wire to stabilize the rebar. Concrete spacers are made of the same material as the poured concrete, so thermal expansion and contraction
+                are equal. And because they are the same material, the concrete and spacers will bond. No gaps!
+                <br>
+              <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" ><p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p></div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row products_page_product_card">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">MESH SPACER</h3>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">A heavy-duty spacer with a large base. Ideal for spacing fabric and bar off soft 
+                blindings and membranes.
+              </p>
+                <br>
+              <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" ><p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p></div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+            </div>
+          </div>
+
+          <div class="row ">
+            <h5>Product Quality</h5>
+            <br><br>
+            <div class="row ">
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row ">
+                  <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <img src="images/p1.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                    <h6>WATER ABSORPTION</h6>
+                    <p style="text-align: justify;">Our water absorption level is 0.4%</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row ">
+                  <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <img src="images/p2.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                    <h6>SULFATE RESISTANCE</h6>
+                    <p style="text-align: justify;">EN206-1 these spacers may be used for Exposure Classes XA2.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row ">
+                  <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <img src="images/p3.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                    <h6>ACCURACY IN DIMENTIONS</h6>
+                    <p style="text-align: justify;">accurate dimensional tolerances resistance to tilting and do not deform under temperature fluctuations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row ">
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row ">
+                  <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <img src="images/p4.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                    <h6>FIRE RESISTANCE</h6>
+                    <p style="text-align: justify;">highest requirements specied in EN13501-1:2002 - Class A1. And local fire resistant standards stipulated by sri lanka Fire Service Department</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row ">
+                  <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <img src="images/p5.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                    <h6>CHLORIDE RESISTANCE</h6>
+                    <p style="text-align: justify;">Chloride content will b less than 0.12 kg/Concrete m 3.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="row ">
+                  <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <img src="images/p6.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                    <h6>CHEMICAL BALANCE</h6>
+                    <p style="text-align: justify;">Chloride Migration Coefficient Ration will be maintain < 2.2x10^-12 sq.m./sec.</p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+          </div>
+
+      </div>
+  </section>
+  <!-- products 2nd section end -->
+
+  <!-- products 3rd section start -->
+  <section id="concrete-flooring">
+    <br>
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="row products_page_section_two">
+        <h1 data-aos="fade-up" data-aos-duration="1500">Cement/concrete flooring</h1>
+            <br>
+            <p  data-aos="fade-up" data-aos-duration="2000">Concrete flooring is a smooth hardwearing flooring solution, suitable across every room 
+              in the home and in commercial/industrial settings too, and it doesn’t have to be a plain, boring, grey finish You can select practically
+               any specific colour, design variations, or simply add aggregates or even unique objects into the concrete floor just before polishing 
+               Coloured concrete floors offer the ideal solution for every customer, whether you want the look of marble in your living room or a deep
+                blue concrete floor throughout a hotel lobby.
+            </p>
+          <br>
+      </div>
+    </div>
+  </section> 
+  <!-- products 3rd section end -->
+
+  <!-- products 4th section start -->
+  <section id="concrete-paving">
+    <br>
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="row products_page_section_two">
+        <h1 data-aos="fade-up" data-aos-duration="1500">Concrete paving</h1>
+            <br>
+          <p  data-aos="fade-up" data-aos-duration="2000">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            anim id est laborum." </p>
+          <br>
+      </div>
+
+      <div class="row products_page_product_card">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Uni Paver</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic 
+            driveways, Municipal parking areas, Pedestrian pavements andPathways & Commercial Development etc.
+          </p>
+            <br>
+          <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#uniPaverModal" data-aos="fade-up" data-aos-duration="2000">
+            calculate bricks
+          </button>
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+          <img src="images/products_page_img2.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+        </div>
+      </div>
+
+      <div class="row products_page_product_card">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+          <img src="images/products_page_img3.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Honey Comb Block</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic driveways, Municipal parking areas, Pedestrian pavements
+            andPathways & Commercial Development etc.
+          </p>
+            <br>
+          <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+          </div>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#honeyCombBlockModal" data-aos="fade-up" data-aos-duration="2000">
+            calculate bricks
+          </button>
+        </div>
+      </div>
+
+      <div class="row products_page_product_card">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Uni Paver</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic 
+            driveways, Municipal parking areas, Pedestrian pavements andPathways & Commercial Development etc.
+          </p>
+            <br>
+          <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+          <img src="images/products_page_img2.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+        </div>
+      </div>
+
+      <div class="row products_page_product_card">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+          <img src="images/products_page_img3.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Honey Comb Block</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic driveways, Municipal parking areas, Pedestrian pavements
+            andPathways & Commercial Development etc.
+          </p>
+            <br>
+          <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row products_page_product_card">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Uni Paver</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic 
+            driveways, Municipal parking areas, Pedestrian pavements andPathways & Commercial Development etc.
+          </p>
+            <br>
+          <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+          <img src="images/products_page_img2.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+        </div>
+      </div>
+
+      <div class="row products_page_product_card">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+          <img src="images/products_page_img3.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Honey Comb Block</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic driveways, Municipal parking areas, Pedestrian pavements
+            andPathways & Commercial Development etc.
+          </p>
+            <br>
+          <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- products 4th section end -->
+
+  <!-- products 5th section start -->
+  <section id="clay-bricks">
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="row products_page_section_two">
+        <h1 data-aos="fade-up" data-aos-duration="1500">Clay Bricks</h1>
+            <br>
+            <p  data-aos="fade-up" data-aos-duration="2000">With over 20 years’ experience in Hand-Crafting Boutique Bricks, our partner factories
+               in Dankotuwa, Amapara, Bangadeniya have the Expertise, Knowledge and dedicated staff that are happy to help you with your project. 
+               Our machine-made wire cut polished bricks have been chosen by many leading architects for their projects Our extensive, intriguing 
+               range of unique Clay Bricks ensures you will find just the right colour palette, style and finish for your project Architects, 
+               designers and builders agree; we are Totally Unique and of the Highest Calibri.
+            </p>
+          <br>
+      </div>
+    </div>
+
+    <div class="row products_page_product_card">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+        <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">ANAMADUWA BRICK</h3>
+        <br>
+        <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">
+          <b>Length :</b>
+          8 1⁄2 ''
+          <br>
+          <b>Wide :</b>
+          5 1⁄2 ''
+          <br>
+          <b>Height :</b>
+          2 1⁄2 ''
+        </p>
+          <p class="products_page_product_card_info_text" data-aos="fade-up" data-aos-duration="1500" style="text-align:left;">Price :  1300/- </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+        <img src="images/briks1.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+      </div>
+    </div>
+
+    <div class="row products_page_product_card">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+        <img src="images/briks2.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
+        <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">WIRE CUT POLISHED BRICK</h3>
+        <br>
+        <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">
+          <b>Length :</b>
+          8 1⁄2 ''
+          <br>
+          <b>Wide :</b>
+          3 1⁄2 ''
+          <br>
+          <b>Height :</b>
+          2 ''
+        </p>
+          <p class="products_page_product_card_info_text" data-aos="fade-up" data-aos-duration="1500" style="text-align:left;">Price :  1300/- </p>
+      </div>
+    </div>
+
+  </section> 
+    <!-- products 5th section end -->
+
+</div> <!-- bootstrap script --> 
 
 </body>
 
