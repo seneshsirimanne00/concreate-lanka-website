@@ -70,11 +70,10 @@
     <!-- back to top button END -->
 
 <!-- inner background -->
+
 <div class="inner_back">
 
   <img src="images/inner_shape.png" alt="inner_shape" class="inner_page_shape" data-aos="fade-left" data-aos-duration="1000">
-
-      <div class="row" style="height: 250px;">
       </div>
 
       <!-- Modals -->
@@ -89,14 +88,15 @@
             </div>
             <div class="modal-body">
               <form>
-                Please enter length and width of the area  <br><br>
                 <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
+                Please enter length and width of the area  <br><br>
                 <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumber" placeholder="Enter length in feet"/></div><br>
                 <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumber" placeholder="Enter width in feet"/></div><br>
                 <input type="button" class="btn btn-dark" onClick="multiplyBy()" Value="Calculate" />
                 </form>
                 <h6>The required amount of bricks is : 
                 <b><span id = "result"></span></b>
+                <br>
                 </h6>
                 
                 <script>
@@ -104,18 +104,18 @@
                 {
                         num1 = document.getElementById("firstNumber").value;
                         num2 = document.getElementById("secondNumber").value;
-                        document.getElementById("result").innerHTML = (num1 * num2)/10;
+                        document.getElementById("result").innerHTML = Math.round((num1 * num2)/0.21);
                 }
                 </script>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
             </div>
           </div>
         </div>
       </div>  
 
-      <!-- uni paver modal -->
+      <!-- honey comb block modal -->
       <div class="modal fade" style="z-index: 9000;" id="honeyCombBlockModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="honeyCombBlockModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -126,20 +126,21 @@
             <div class="modal-body">
               <form>
                 Please enter length and width of the area  <br><br>
-                <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumber" placeholder="Enter length in feet"/></div><br>
-                <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumber" placeholder="Enter width in feet"/></div><br>
-                <input type="button" class="btn btn-dark" onClick="multiplyBy()" Value="Calculate" />
+                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
+                <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumberh" placeholder="Enter length in feet"/></div><br>
+                <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumberh" placeholder="Enter width in feet"/></div><br>
+                <input type="button" class="btn btn-dark" onClick="multiplyByh()" Value="Calculate" />
                 </form>
                 <h6>The required amount of bricks is : 
-                <b><span id = "result"></span></b>
+                <b><span id = "resulth"></span></b>
                 </h6>
                 
                 <script>
-                function multiplyBy()
+                function multiplyByh()
                 {
-                        num1 = document.getElementById("firstNumber").value;
-                        num2 = document.getElementById("secondNumber").value;
-                        document.getElementById("result").innerHTML = (num1 * num2)/10;
+                        num1 = document.getElementById("firstNumberh").value;
+                        num2 = document.getElementById("secondNumberh").value;
+                        document.getElementById("resulth").innerHTML = Math.round((num1 * num2)/0.5);
                 }
                 </script>
             </div>
@@ -148,7 +149,151 @@
             </div>
           </div>
         </div>
-      </div>  
+      </div>
+      
+      <!-- I Block modal -->
+      <div class="modal fade" style="z-index: 9000;" id="IBlockModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uniPaverModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uniPaverModalLabel">Block calculator ( I Block )</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
+                Please enter length and width of the area  <br><br>
+                <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumberI" placeholder="Enter length in feet"/></div><br>
+                <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumberI" placeholder="Enter width in feet"/></div><br>
+                <input type="button" class="btn btn-dark" onClick="multiplyByI()" Value="Calculate" />
+                </form>
+                <h6>The required amount of bricks is : 
+                <b><span id = "resultI"></span></b>
+                </h6>
+                
+                <script>
+                function multiplyByI()
+                {
+                        num1 = document.getElementById("firstNumberI").value;
+                        num2 = document.getElementById("secondNumberI").value;
+                        document.getElementById("resultI").innerHTML = (num1 * num2)/0.23;
+                }
+                </script>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Block modal -->
+      <div class="modal fade" style="z-index: 9000;" id="threeDBlockModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uniPaverModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uniPaverModalLabel">Block calculator ( 3D Block )</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
+                Please enter length and width of the area  <br><br>
+                <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumberd" placeholder="Enter length in feet"/></div><br>
+                <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumberd" placeholder="Enter width in feet"/></div><br>
+                <input type="button" class="btn btn-dark" onClick="multiplyByd()" Value="Calculate" />
+                </form>
+                <h6>The required amount of bricks is : 
+                <b><span id = "resultd"></span></b>
+                </h6>
+                
+                <script>
+                function multiplyByd()
+                {
+                        num1 = document.getElementById("firstNumberd").value;
+                        num2 = document.getElementById("secondNumberd").value;
+                        document.getElementById("resultd").innerHTML = Math.round((num1 * num2)/0.1);
+                }
+                </script>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 x 4 Block modal -->
+      <div class="modal fade" style="z-index: 9000;" id="fourbyfourBlockModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uniPaverModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uniPaverModalLabel">Block calculator ( 4 x 4 Block )</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
+                Please enter length and width of the area  <br><br>
+                <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumberf" placeholder="Enter length in feet"/></div><br>
+                <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumberf" placeholder="Enter width in feet"/></div><br>
+                <input type="button" class="btn btn-dark" onClick="multiplyByf()" Value="Calculate" />
+                </form>
+                <h6>The required amount of bricks is : 
+                <b><span id = "resultf"></span></b>
+                </h6>
+                
+                <script>
+                function multiplyByf()
+                {
+                        num1 = document.getElementById("firstNumberf").value;
+                        num2 = document.getElementById("secondNumberf").value;
+                        document.getElementById("resultf").innerHTML = Math.round((num1 * num2)/0.11);
+                }
+                </script>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 x 4 Block modal -->
+      <div class="modal fade" style="z-index: 9000;" id="eightbyfourBlockModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uniPaverModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uniPaverModalLabel">Block calculator ( 8 x 4 Block )</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
+                Please enter length and width of the area  <br><br>
+                <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumbere" placeholder="Enter length in feet"/></div><br>
+                <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumbere" placeholder="Enter width in feet"/></div><br>
+                <input type="button" class="btn btn-dark" onClick="multiplyBye()" Value="Calculate" />
+                </form>
+                <h6>The required amount of bricks is : 
+                <b><span id = "resulte"></span></b>
+                </h6>
+                
+                <script>
+                function multiplyBye()
+                {
+                        num1 = document.getElementById("firstNumbere").value;
+                        num2 = document.getElementById("secondNumbere").value;
+                        document.getElementById("resulte").innerHTML = Math.round((num1 * num2)/0.21);
+                }
+                </script>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- products 1st section -->
 
@@ -173,7 +318,9 @@
                   <img class="top-card-content-image" src="images/top_1.jpg">
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Concrete spacers</h5>
-                    <p class="top-card-content-text">This is a short description</p>
+                    <p class="top-card-content-text">Concreate is the pioneer in introducing a complete range of high standard fibre reinforced
+                       concrete spacers for the rapidly growing construction industry in sri lanka.</p>
+                       <h6 style="color: white;">Learn More</h6>
                   </div>
                 </a>
               </div>
@@ -188,6 +335,7 @@
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Concrete paving</h5>
                     <p class="top-card-content-text">This is a short description</p>
+                    <h6>Learn More</h6>
                   </div>
                 </a>
               </div>
@@ -245,79 +393,191 @@
 
           <div class="row products_page_product_card">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
-              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">CIRCULAR SPACER</h3>
-              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">This is used in cylindrical structures 
-                such as spun plies, round columns. This kind of spacers can also be used in the normal structures of beam, slab,wall.
+              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SLAB SPACER</h3>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">A flat-based single or multiple cover concrete spacer block 
+                giving maximum stability in horizontal applications. A cover block is essentially a spacer that is used to lift the rebar matrix off 
+                the ground so that concrete may flow underneath the rebar. Available in different shapes and sizes.
               </p>
                 <br>
               <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" >
-                  <!-- <p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p> -->
-                  <div class="product_price_slideshow-container">
+                <div class="product_price_slideshow-container">
 
-                    <div class="product_price_mySlides fade">
-                      <div class="product_price_numbertext">15mm</div>
-                     
-                      <div class="product_price_text">300</div>
-                    </div>
-                    
-                    <div class="product_price_mySlides fade">
-                      <div class="product_price_numbertext">25mm</div>
-                     
-                      <div class="product_price_text">200</div>
-                    </div>
-                    
-                    <div class="product_price_mySlides fade">
-                      <div class="product_price_numbertext">30mm</div>
-                     
-                      <div class="product_price_text">400</div>
-                    </div>
-                    
-                    <a class="product_price_prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="product_price_next" onclick="plusSlides(1)">&#10095;</a>
-                    
-                    </div>
-                    <br>
-                    <script>
-                    var slideIndex = 1;
-                    showSlides(slideIndex);
-                    
-                    function plusSlides(n) {
-                      showSlides(slideIndex += n);
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">15mm</div><div class="product_price_text2">Rs.30</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">20mm</div><div class="product_price_text2">Rs.40</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">25mm</div><div class="product_price_text2">Rs.50</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">30mm</div><div class="product_price_text2">Rs.30</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">35mm</div><div class="product_price_text2">Rs.40</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">40mm</div><div class="product_price_text2">Rs.50</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">45mm</div><div class="product_price_text2">Rs.30</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">50mm</div><div class="product_price_text2">Rs.40</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">60mm</div><div class="product_price_text2">Rs.50</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">80mm</div><div class="product_price_text2">Rs.30</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">90mm</div><div class="product_price_text2">Rs.40</div></div>
+                  <div class="product_price_mySlidestwo"><div class="product_price_numbertext2">100mm</div><div class="product_price_text2">Rs.50</div></div>
+                  
+                  <a class="product_price_prev" onclick="plusSlidestwo(-1)">&#10094;</a>
+                  <a class="product_price_next" onclick="plusSlidestwo(1)">&#10095;</a>
+                  
+                  </div>
+                  <br>
+                  <script>
+                  var slideIndextwo = 1;
+                  showSlidestwo(slideIndextwo);
+                  
+                  function plusSlidestwo(n) {
+                    showSlidestwo(slideIndextwo += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlidestwo(slideIndextwo = n);
+                  }
+                  
+                  function showSlidestwo(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("product_price_mySlidestwo");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndextwo = 1}    
+                    if (n < 1) {slideIndextwo = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
                     }
-                    
-                    function currentSlide(n) {
-                      showSlides(slideIndex = n);
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
                     }
-                    
-                    function showSlides(n) {
-                      var i;
-                      var slides = document.getElementsByClassName("product_price_mySlides");
-                      var dots = document.getElementsByClassName("dot");
-                      if (n > slides.length) {slideIndex = 1}    
-                      if (n < 1) {slideIndex = slides.length}
-                      for (i = 0; i < slides.length; i++) {
-                          slides[i].style.display = "none";  
-                      }
-                      for (i = 0; i < dots.length; i++) {
-                          dots[i].className = dots[i].className.replace(" active", "");
-                      }
-                      slides[slideIndex-1].style.display = "block";  
-                      dots[slideIndex-1].className += " active";
-                    }
-                    </script>
-                </div>
-                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+                    slides[slideIndextwo-1].style.display = "block";  
+                    dots[slideIndextwo-1].className += " active";
+                  }
+                  </script>
               </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+              <img src="images/spacers22.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
             </div>
           </div>
 
           <div class="row products_page_product_card">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+              <img src="images/beam spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
+              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Linear Spacers (Π-section profiles, H-section profiles, or other 3 dimensional shapes). 
+                It has a hole to connect attache a wire to stabilize the rebar. Concrete spacers are made of the same material as the poured concrete, so thermal expansion and contraction
+                are equal. And because they are the same material, the concrete and spacers will bond. No gaps!
+                <br>
+              <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                <div class="product_price_slideshow-container">
+
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">20mm</div><div class="product_price_text3">Rs.30</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">25mm</div><div class="product_price_text3">Rs.40</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">30mm</div><div class="product_price_text3">Rs.50</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">35mm</div><div class="product_price_text3">Rs.30</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">40mm</div><div class="product_price_text3">Rs.40</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">50mm</div><div class="product_price_text3">Rs.50</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">55mm</div><div class="product_price_text3">Rs.30</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">60mm</div><div class="product_price_text3">Rs.40</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">70mm</div><div class="product_price_text3">Rs.30</div></div>
+                  <div class="product_price_mySlidesthree"><div class="product_price_numbertext3">80mm</div><div class="product_price_text3">Rs.40</div></div>
+                  
+                  <a class="product_price_prev" onclick="plusSlidesthree(-1)">&#10094;</a>
+                  <a class="product_price_next" onclick="plusSlidesthree(1)">&#10095;</a>
+                  
+                  </div>
+                  <br>
+                  <script>
+                  var slideIndexthree = 1;
+                  showSlidesthree(slideIndexthree);
+                  
+                  function plusSlidesthree(n) {
+                    showSlidesthree(slideIndexthree += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlidesthree(slideIndexthree = n);
+                  }
+                  
+                  function showSlidesthree(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("product_price_mySlidesthree");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndexthree = 1}    
+                    if (n < 1) {slideIndexthree = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndexthree-1].style.display = "block";  
+                    dots[slideIndexthree-1].className += " active";
+                  }
+                  </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="row products_page_product_card" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">CIRCULAR SPACER</h3>
+              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">This is used in cylindrical structures 
+                such as spun plies, round columns. This kind of spacers can also be used in the normal structures of beam, slab,wall.
+              </p>
+                <br>
+              <div class="row price_slideshow">
+                <div class="product_price_slideshow-container">
+
+                  <div class="product_price_mySlides"><div class="product_price_numbertext">20mm</div><div class="product_price_text">Rs.30</div></div>
+                  <div class="product_price_mySlides"><div class="product_price_numbertext">25mm</div><div class="product_price_text">Rs.40</div></div>
+                  <div class="product_price_mySlides"><div class="product_price_numbertext">30mm</div><div class="product_price_text">Rs.50</div></div>
+                  <div class="product_price_mySlides"><div class="product_price_numbertext">35mm</div><div class="product_price_text">Rs.30</div></div>
+                  <div class="product_price_mySlides"><div class="product_price_numbertext">45mm</div><div class="product_price_text">Rs.40</div></div>
+                  <div class="product_price_mySlides"><div class="product_price_numbertext">52mm</div><div class="product_price_text">Rs.50</div></div>
+                  <div class="product_price_mySlides"><div class="product_price_numbertext">75mm</div><div class="product_price_text">Rs.30</div></div>
+                  <div class="product_price_mySlides"><div class="product_price_numbertext">90mm</div><div class="product_price_text">Rs.40</div></div>
+                  
+                  <a class="product_price_prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="product_price_next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                  </div>
+                  <br>
+                  <script>
+                  var slideIndex = 1;
+                  showSlides(slideIndex);
+                  
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+                  
+                  function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("product_price_mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                  }
+                  </script>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+              <img src="images/circularspacer.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+            </div>
+          </div>
+
+          <div class="row products_page_product_card">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+              <img src="images/squar spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
               <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -327,45 +587,48 @@
                 corrosion. 
               </p>
                 <br>
-              <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" ><p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p></div>
-                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row products_page_product_card">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
-              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SLAB SPACER</h3>
-              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">A flat-based single or multiple cover concrete spacer block 
-                giving maximum stability in horizontal applications. A cover block is essentially a spacer that is used to lift the rebar matrix off 
-                the ground so that concrete may flow underneath the rebar. Available in different shapes and sizes.
-              </p>
-                <br>
-              <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" ><p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p></div>
-                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
-            </div>
-          </div>
-
-          <div class="row products_page_product_card">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
-              <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
-              <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Linear Spacers (Π-section profiles, H-section profiles, or other 3 dimensional shapes). 
-                It has a hole to connect attache a wire to stabilize the rebar. Concrete spacers are made of the same material as the poured concrete, so thermal expansion and contraction
-                are equal. And because they are the same material, the concrete and spacers will bond. No gaps!
-                <br>
-              <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" ><p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p></div>
-                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
-              </div>
+                <div class="row price_slideshow">
+                  <div class="product_price_slideshow-container">
+  
+                    <div class="product_price_mySlides1"><div class="product_price_numbertext1">200mm</div><div class="product_price_text1">Rs.30</div></div>
+                    <div class="product_price_mySlides1"><div class="product_price_numbertext1">250mm</div><div class="product_price_text1">Rs.40</div></div>
+                    <div class="product_price_mySlides1"><div class="product_price_numbertext1">300mm</div><div class="product_price_text1">Rs.50</div></div>
+                    <div class="product_price_mySlides1"><div class="product_price_numbertext1">350mm</div><div class="product_price_text1">Rs.30</div></div>
+                    <div class="product_price_mySlides1"><div class="product_price_numbertext1">450mm</div><div class="product_price_text1">Rs.40</div></div>
+                    <a class="product_price_prev" onclick="plusSlidesone(-1)">&#10094;</a>
+                    <a class="product_price_next" onclick="plusSlidesone(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    <script>
+                    var slideIndexone = 1;
+                    showSlidesone(slideIndexone);
+                    
+                    function plusSlidesone(n) {
+                      showSlidesone(slideIndexone += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlidesone(slideIndexone = n);
+                    }
+                    
+                    function showSlidesone(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("product_price_mySlides1");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndexone = 1}    
+                      if (n < 1) {slideIndexone = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndexone-1].style.display = "block";  
+                      dots[slideIndexone-1].className += " active";
+                    }
+                    </script>
+                </div>
             </div>
           </div>
 
@@ -377,12 +640,48 @@
               </p>
                 <br>
               <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 products_page_product_card_info_text" ><p class="products_page_product_card_info_text" style="text-align:left;"><- 20mm -> </p></div>
-                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
+                <div class="product_price_slideshow-container">
+
+                  <div class="product_price_mySlidesfour"><div class="product_price_numbertext4">90mm</div><div class="product_price_text4">Rs.30</div></div>
+                  <div class="product_price_mySlidesfour"><div class="product_price_numbertext4">100mm</div><div class="product_price_text4">Rs.40</div></div>
+                  
+                  <a class="product_price_prev" onclick="plusSlidesfour(-1)">&#10094;</a>
+                  <a class="product_price_next" onclick="plusSlidesfour(1)">&#10095;</a>
+                  
+                  </div>
+                  <br>
+                  <script>
+                  var slideIndexfour = 1;
+                  showSlidesfour(slideIndexfour);
+                  
+                  function plusSlidesfour(n) {
+                    showSlidesfour(slideIndexfour += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlidesfour(slideIndexfour = n);
+                  }
+                  
+                  function showSlidesfour(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("product_price_mySlidesfour");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndexfour = 1}    
+                    if (n < 1) {slideIndexfour = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndexfour-1].style.display = "block";  
+                    dots[slideIndexfour-1].className += " active";
+                  }
+                  </script>
               </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-              <img src="images/products_page_img.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+              <img src="images/mesh spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
             </div>
           </div>
 
@@ -487,6 +786,12 @@
           <br>
       </div>
     </div>
+
+    <div class="section3Images">
+      <img src="images/flooring1.jpg" data-aos="fade-right" data-aos-duration="1500" class="img-fluid" alt="concrete floor">
+      <img src="images/flooring2.jpg" data-aos="fade-up" data-aos-duration="1000" class="img-fluid" alt="concrete flooring">
+      <img src="images/flooring3.jpg" data-aos="fade-left" data-aos-duration="1500" class="img-fluid" alt="concrete floor">
+    </div>
   </section> 
   <!-- products 3rd section end -->
 
@@ -509,10 +814,11 @@
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
           <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Uni Paver</h3>
           <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic 
-            driveways, Municipal parking areas, Pedestrian pavements andPathways & Commercial Development etc.
+            driveways, Municipal parking areas, Pedestrian pavements andPathways & Commercial Development etc.has a strength of 30N.
           </p>
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <p>Available colors</p><br>
             <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
@@ -534,10 +840,11 @@
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
           <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Honey Comb Block</h3>
           <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic driveways, Municipal parking areas, Pedestrian pavements
-            andPathways & Commercial Development etc.
+            andPathways & Commercial Development etc.has a strength of 35N.
           </p>
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <p>Available colors</p><br>
             <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
@@ -549,69 +856,89 @@
 
       <div class="row products_page_product_card">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
-          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Uni Paver</h3>
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">I Block</h3>
           <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic 
-            driveways, Municipal parking areas, Pedestrian pavements andPathways & Commercial Development etc.
+            driveways, Shopping centers, Commercial Developments & Commercial Development etc.has a strength of 32N.
           </p>
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <p>Available colors</p><br>
             <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#IBlockModal" data-aos="fade-up" data-aos-duration="2000">
+            calculate bricks
+          </button>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-          <img src="images/products_page_img2.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+          <img src="images/products_page_img4.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
         </div>
       </div>
 
       <div class="row products_page_product_card">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-          <img src="images/products_page_img3.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
+          <img src="images/products_page_img5.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
-          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Honey Comb Block</h3>
-          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic driveways, Municipal parking areas, Pedestrian pavements
-            andPathways & Commercial Development etc.
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">3D Block</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Mixed developments, Small landscapers
+            and Domestic gardening etc.has a strength of 32N.
           </p>
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <p>Available colors</p><br>
             <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#threeDBlockModal" data-aos="fade-up" data-aos-duration="2000">
+            calculate bricks
+          </button>
         </div>
       </div>
 
       <div class="row products_page_product_card">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
-          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Uni Paver</h3>
-          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic 
-            driveways, Municipal parking areas, Pedestrian pavements andPathways & Commercial Development etc.
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">4 x 4 Block</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Mixed developments, Small landscapers
+            and Domestic gardening etc. has a strength of 32N.
           </p>
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <p>Available colors</p><br>
             <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#fourbyfourBlockModal" data-aos="fade-up" data-aos-duration="2000">
+            calculate bricks
+          </button>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-          <img src="images/products_page_img2.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+          <img src="images/products_page_img6.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
         </div>
       </div>
 
       <div class="row products_page_product_card">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-          <img src="images/products_page_img3.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
+          <img src="images/products_page_img7.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
-          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Honey Comb Block</h3>
-          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Domestic driveways, Municipal parking areas, Pedestrian pavements
-            andPathways & Commercial Development etc.
+          <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">8 x 4 Block</h3>
+          <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">Can be used for aplications like Mixed developments, Small landscapers
+            and Domestic gardening etc. has a strength of 32N.
           </p>
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
+            <p>Available colors</p><br>
             <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#eightbyfourBlockModal" data-aos="fade-up" data-aos-duration="2000">
+            calculate bricks
+          </button>
         </div>
       </div>
     </div>
