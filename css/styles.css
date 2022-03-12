@@ -340,7 +340,7 @@ right: 0px;
   }
 
   .top-card-content-main-title{
-      color: rgba(0, 0, 0, 0.445);
+      color: rgb(252, 252, 252);
       text-decoration: none;
       position: absolute;
       bottom: 3%;
@@ -590,3 +590,10 @@ right: 0px;
   /* products page top card css END */
 /* Inner pages product css end */
 
+/* google translate element start*/
+
+.google-translate{
+    width: 161px;
+    background-color: #00ffff00;
+    border: none;
+}

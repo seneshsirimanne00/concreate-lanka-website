@@ -73,8 +73,18 @@
 
 <div class="inner_back">
 
-  <img src="images/inner_shape.png" alt="inner_shape" class="inner_page_shape" data-aos="fade-left" data-aos-duration="1000">
+  <img onContextMenu="return false;" src="images/inner_shape.png" alt="inner_shape" class="inner_page_shape" data-aos="fade-left" data-aos-duration="1000">
       </div>
+
+      <!-- <div class="google-translate" id="google_translate_element"></div> -->
+
+      <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
       <!-- Modals -->
 
@@ -88,8 +98,8 @@
             </div>
             <div class="modal-body">
               <form>
-                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 Please enter length and width of the area  <br><br>
+                <img onContextMenu="return false;" src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumber" placeholder="Enter length in feet"/></div><br>
                 <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumber" placeholder="Enter width in feet"/></div><br>
                 <input type="button" class="btn btn-dark" onClick="multiplyBy()" Value="Calculate" />
@@ -126,7 +136,7 @@
             <div class="modal-body">
               <form>
                 Please enter length and width of the area  <br><br>
-                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
+                <img onContextMenu="return false;" src="images/honeycombblocksize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumberh" placeholder="Enter length in feet"/></div><br>
                 <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumberh" placeholder="Enter width in feet"/></div><br>
                 <input type="button" class="btn btn-dark" onClick="multiplyByh()" Value="Calculate" />
@@ -161,8 +171,8 @@
             </div>
             <div class="modal-body">
               <form>
-                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 Please enter length and width of the area  <br><br>
+                <img onContextMenu="return false;" src="images/iblocksize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumberI" placeholder="Enter length in feet"/></div><br>
                 <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumberI" placeholder="Enter width in feet"/></div><br>
                 <input type="button" class="btn btn-dark" onClick="multiplyByI()" Value="Calculate" />
@@ -197,8 +207,8 @@
             </div>
             <div class="modal-body">
               <form>
-                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 Please enter length and width of the area  <br><br>
+                <img onContextMenu="return false;" src="images/3dblocksize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumberd" placeholder="Enter length in feet"/></div><br>
                 <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumberd" placeholder="Enter width in feet"/></div><br>
                 <input type="button" class="btn btn-dark" onClick="multiplyByd()" Value="Calculate" />
@@ -233,8 +243,8 @@
             </div>
             <div class="modal-body">
               <form>
-                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 Please enter length and width of the area  <br><br>
+                <img onContextMenu="return false;" src="images/fourblocksize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumberf" placeholder="Enter length in feet"/></div><br>
                 <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumberf" placeholder="Enter width in feet"/></div><br>
                 <input type="button" class="btn btn-dark" onClick="multiplyByf()" Value="Calculate" />
@@ -269,8 +279,8 @@
             </div>
             <div class="modal-body">
               <form>
-                <img src="images/unipaversize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 Please enter length and width of the area  <br><br>
+                <img onContextMenu="return false;" src="images/eightblocksize.png"  style="width: 50%;" class="img-fluid products_page_top_img zoomIn" alt="..." >
                 <div class="modal-input-container"><p>length :</p> <input type="text" id="firstNumbere" placeholder="Enter length in feet"/></div><br>
                 <div class="modal-input-container"><p>width:</p> <input type="text" id="secondNumbere" placeholder="Enter width in feet"/></div><br>
                 <input type="button" class="btn btn-dark" onClick="multiplyBye()" Value="Calculate" />
@@ -299,8 +309,8 @@
 
       <div class="container" data-aos="fade-up" data-aos-duration="1500">
           <div class="row products_page_top">
-            <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10" >
-              <h1 data-aos="fade-up" data-aos-duration="1500">Our <span style="color: #898989;">Projects</span></h1>
+            <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10" style="margin-top: 200px;">
+              <h1 data-aos="fade-up" data-aos-duration="1500">Products<span style="color: #898989;">Overview</span></h1>
                 <br>
               <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
@@ -315,7 +325,7 @@
                 <a href="#concrete-spacers">
                   <div class="top-card-content-overlay"></div>
                   <h4 class="top-card-content-main-title" >Concrete spacers</h4>
-                  <img class="top-card-content-image" src="images/top_1.jpg">
+                  <img onContextMenu="return false;" class="top-card-content-image" src="images/paving.jpeg" onContextMenu="return false;">
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Concrete spacers</h5>
                     <p class="top-card-content-text">Concreate is the pioneer in introducing a complete range of high standard fibre reinforced
@@ -331,11 +341,11 @@
                 <a href="#concrete-paving">
                   <div class="top-card-content-overlay"></div>
                   <h4 class="top-card-content-main-title" >Concrete paving</h4>
-                  <img class="top-card-content-image" src="images/top_2.png">
+                  <img onContextMenu="return false;" class="top-card-content-image" src="images/paving2.png">
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Concrete paving</h5>
-                    <p class="top-card-content-text">This is a short description</p>
-                    <h6>Learn More</h6>
+                    <p class="top-card-content-text">We are with experienced laying team who have more 15 than years of experience specializing in block paving. We pride ourselves on providing top quality workmanship at reasonable and affordable prices. </p>
+                    <h6 style="color: white;">Learn More</h6>
                   </div>
                 </a>
               </div>
@@ -347,10 +357,11 @@
                 <a href="#concrete-flooring">
                   <div class="top-card-content-overlay"></div>
                   <h4 class="top-card-content-main-title" >Cement/Concrete Flooring</h4>
-                  <img class="top-card-content-image" src="images/products_page_category_img.png">
+                  <img onContextMenu="return false;" class="top-card-content-image" src="images/flooring3.jpg">
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Cement/Concrete Flooring</h5>
-                    <p class="top-card-content-text">This is a short description</p>
+                    <p class="top-card-content-text">Concrete flooring is a smooth hardwearing flooring solution, suitable across every room in the home and in commercial/industrial settings too, and it doesn’t have to be a plain ....</p>
+                    <h6 style="color: white;">Learn More</h6>
                   </div>
                 </a>
               </div>
@@ -361,10 +372,11 @@
                 <a href="#clay-bricks">
                   <div class="top-card-content-overlay"></div>
                   <h4 class="top-card-content-main-title" >Clay bricks</h4>
-                  <img class="top-card-content-image" src="images/top_4.png">
+                  <img onContextMenu="return false;" class="top-card-content-image" src="images/bricks.jpeg">
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Clay bricks</h5>
-                    <p class="top-card-content-text">This is a short description</p>
+                    <p class="top-card-content-text">With over 20 years’ experience in Hand-Crafting Boutique Bricks, our partner factories in Dankotuwa, Amapara, Bangadeniya have the Expertise, Knowledge and dedicated staff that are happy to help you with your project.</p>
+                    <h6 style="color: white;">Learn More</h6>
                   </div>
                 </a>
               </div>
@@ -377,7 +389,7 @@
 
     <!-- products 2nd section -->
   <section id="concrete-spacers">
-    <img src="images/inner_page_triangle_shape.png" alt="inner_shape" class="inner_page_triangle_shape" data-aos="zoom-in" data-aos-duration="1000">
+    <img onContextMenu="return false;" src="images/inner_page_triangle_shape.png" alt="inner_shape" class="inner_page_triangle_shape" data-aos="zoom-in" data-aos-duration="1000">
 
       <div class="container" data-aos="fade-up" data-aos-duration="1500">
           <div class="row products_page_section_two">
@@ -451,13 +463,13 @@
               </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-              <img src="images/spacers22.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+              <img onContextMenu="return false;" src="images/spacers22.png" class="img-fluid products_page_top_img" onContextMenu="return false;" alt="..." data-aos="fade-left" data-aos-duration="1500">
             </div>
           </div>
 
           <div class="row products_page_product_card">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-              <img src="images/beam spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+              <img onContextMenu="return false;" src="images/beam spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
               <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
@@ -571,13 +583,13 @@
               </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-              <img src="images/circularspacer.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+              <img onContextMenu="return false;" src="images/circularspacer.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
             </div>
           </div>
 
           <div class="row products_page_product_card">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-              <img src="images/squar spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+              <img onContextMenu="return false;" src="images/squar spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
               <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -681,7 +693,7 @@
               </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-              <img src="images/mesh spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+              <img onContextMenu="return false;" src="images/mesh spacers.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
             </div>
           </div>
 
@@ -692,7 +704,7 @@
               <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="row ">
                   <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="images/p1.png" class="img-fluid" alt="...">
+                    <img onContextMenu="return false;" src="images/p1.png" class="img-fluid" alt="...">
                   </div>
                   <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
                     <h6>WATER ABSORPTION</h6>
@@ -704,7 +716,7 @@
               <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="row ">
                   <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="images/p2.png" class="img-fluid" alt="...">
+                    <img onContextMenu="return false;" src="images/p2.png" class="img-fluid" alt="...">
                   </div>
                   <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
                     <h6>SULFATE RESISTANCE</h6>
@@ -716,7 +728,7 @@
               <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="row ">
                   <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="images/p3.png" class="img-fluid" alt="...">
+                    <img onContextMenu="return false;" src="images/p3.png" class="img-fluid" alt="...">
                   </div>
                   <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
                     <h6>ACCURACY IN DIMENTIONS</h6>
@@ -730,7 +742,7 @@
               <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="row ">
                   <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="images/p4.png" class="img-fluid" alt="...">
+                    <img onContextMenu="return false;" src="images/p4.png" class="img-fluid" alt="...">
                   </div>
                   <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
                     <h6>FIRE RESISTANCE</h6>
@@ -742,7 +754,7 @@
               <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="row ">
                   <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="images/p5.png" class="img-fluid" alt="...">
+                    <img onContextMenu="return false;" src="images/p5.png" class="img-fluid" alt="...">
                   </div>
                   <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
                     <h6>CHLORIDE RESISTANCE</h6>
@@ -754,7 +766,7 @@
               <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <div class="row ">
                   <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <img src="images/p6.png" class="img-fluid" alt="...">
+                    <img onContextMenu="return false;" src="images/p6.png" class="img-fluid" alt="...">
                   </div>
                   <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
                     <h6>CHEMICAL BALANCE</h6>
@@ -788,9 +800,9 @@
     </div>
 
     <div class="section3Images">
-      <img src="images/flooring1.jpg" data-aos="fade-right" data-aos-duration="1500" class="img-fluid" alt="concrete floor">
-      <img src="images/flooring2.jpg" data-aos="fade-up" data-aos-duration="1000" class="img-fluid" alt="concrete flooring">
-      <img src="images/flooring3.jpg" data-aos="fade-left" data-aos-duration="1500" class="img-fluid" alt="concrete floor">
+      <img onContextMenu="return false;" src="images/flooring1.jpg" data-aos="fade-right" data-aos-duration="1500" class="img-fluid" alt="concrete floor">
+      <img onContextMenu="return false;" src="images/flooring2.jpg" data-aos="fade-up" data-aos-duration="1000" class="img-fluid" alt="concrete flooring">
+      <img onContextMenu="return false;" src="images/flooring3.jpg" data-aos="fade-left" data-aos-duration="1500" class="img-fluid" alt="concrete floor">
     </div>
   </section> 
   <!-- products 3rd section end -->
@@ -819,7 +831,7 @@
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
             <p>Available colors</p><br>
-            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-9 products_page_product_card_info_text" ><img onContextMenu="return false;" src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
           <br>
@@ -829,13 +841,13 @@
 
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-          <img src="images/products_page_img2.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+          <img onContextMenu="return false;" src="images/products_page_img2.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
         </div>
       </div>
 
       <div class="row products_page_product_card">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-          <img src="images/products_page_img3.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
+          <img onContextMenu="return false;" src="images/products_page_img3.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
           <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">Honey Comb Block</h3>
@@ -845,7 +857,7 @@
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
             <p>Available colors</p><br>
-            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-9 products_page_product_card_info_text" ><img onContextMenu="return false;" src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
           <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#honeyCombBlockModal" data-aos="fade-up" data-aos-duration="2000">
@@ -863,7 +875,7 @@
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
             <p>Available colors</p><br>
-            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-9 products_page_product_card_info_text" ><img onContextMenu="return false;" src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
           <br>
@@ -872,13 +884,13 @@
           </button>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-          <img src="images/products_page_img4.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+          <img onContextMenu="return false;" src="images/products_page_img4.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
         </div>
       </div>
 
       <div class="row products_page_product_card">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-          <img src="images/products_page_img5.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
+          <img onContextMenu="return false;" src="images/products_page_img5.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
           <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">3D Block</h3>
@@ -888,7 +900,7 @@
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
             <p>Available colors</p><br>
-            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-9 products_page_product_card_info_text" ><img onContextMenu="return false;" src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
           <br>
@@ -907,7 +919,7 @@
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
             <p>Available colors</p><br>
-            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-9 products_page_product_card_info_text" ><img onContextMenu="return false;" src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
           <br>
@@ -916,13 +928,13 @@
           </button>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-          <img src="images/products_page_img6.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+          <img onContextMenu="return false;" src="images/products_page_img6.png" class="img-fluid products_page_top_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
         </div>
       </div>
 
       <div class="row products_page_product_card">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-          <img src="images/products_page_img7.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
+          <img onContextMenu="return false;" src="images/products_page_img7.png" class="img-fluid " alt="..." data-aos="fade-right" data-aos-duration="1500">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
           <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">8 x 4 Block</h3>
@@ -932,7 +944,7 @@
             <br>
           <div class="row" data-aos="fade-up" data-aos-duration="2000">
             <p>Available colors</p><br>
-            <div class="col-9 products_page_product_card_info_text" ><img src="images/colors.png" class="img-fluid" alt="..."></div>
+            <div class="col-9 products_page_product_card_info_text" ><img onContextMenu="return false;" src="images/colors.png" class="img-fluid" alt="..."></div>
             <div class="col-3 products_page_product_card_info_text" ><p  class="products_page_product_card_info_text"style="text-align:right;">Price :  1300/-</p></div>
           </div>
           <br>
@@ -978,13 +990,13 @@
           <p class="products_page_product_card_info_text" data-aos="fade-up" data-aos-duration="1500" style="text-align:left;">Price :  1300/- </p>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
-        <img src="images/briks1.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+        <img onContextMenu="return false;" src="images/briks1.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
       </div>
     </div>
 
     <div class="row products_page_product_card">
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-        <img src="images/briks2.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+        <img onContextMenu="return false;" src="images/briks2.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
         <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">WIRE CUT POLISHED BRICK</h3>
@@ -1000,6 +1012,69 @@
           2 ''
         </p>
           <p class="products_page_product_card_info_text" data-aos="fade-up" data-aos-duration="1500" style="text-align:left;">Price :  1300/- </p>
+      </div>
+    </div>
+
+    <div class="row products_page_product_card">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+        <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">DANKOTUWA MACHINE BRICK</h3>
+        <br>
+        <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">
+          <b>Length :</b>
+          7 1⁄2 ''
+          <br>
+          <b>Wide :</b>
+          3 1⁄2 ''
+          <br>
+          <b>Height :</b>
+          2 ''
+        </p>
+          <p class="products_page_product_card_info_text" data-aos="fade-up" data-aos-duration="1500" style="text-align:left;">Price :  1300/- </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+        <img onContextMenu="return false;" src="images/briks1.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
+      </div>
+    </div>
+
+    <div class="row products_page_product_card">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+        <img onContextMenu="return false;" src="images/briks2.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-right" data-aos-duration="1500">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line products_page_product_card_text_part">
+        <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">DANKOTUWA WIDE BRICK</h3>
+        <br>
+        <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">
+          <b>Length :</b>
+          8 ''
+          <br>
+          <b>Wide :</b>
+          4 1⁄2 ''
+          <br>
+          <b>Height :</b>
+          2 1⁄2 ''
+        </p>
+          <p class="products_page_product_card_info_text" data-aos="fade-up" data-aos-duration="1500" style="text-align:left;">Price :  1300/- </p>
+      </div>
+    </div>
+
+    <div class="row products_page_product_card">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_product_card_text_part">
+        <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">DANKOTUWA ENGINEERING BRICK</h3>
+        <br>
+        <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">
+          <b>Length :</b>
+          7 1⁄2 ''
+          <br>
+          <b>Wide :</b>
+          3 1⁄2 ''
+          <br>
+          <b>Height :</b>
+          2 ''
+        </p>
+          <p class="products_page_product_card_info_text" data-aos="fade-up" data-aos-duration="1500" style="text-align:left;">Price :  1300/- </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 products_page_top_middle_line">
+        <img onContextMenu="return false;" src="images/briks1.jpg" class="img-fluid products_page_img" alt="..." data-aos="fade-left" data-aos-duration="1500">
       </div>
     </div>
 
@@ -1022,6 +1097,14 @@
     AOS.init();
   </script>
 <!-- aos script -->
+
+<script>
+  $('img').mousedown(function (e) {
+  if(e.button == 2) { // right click
+    return false; // do nothing!
+  }
+  })
+</script>
 
 
 </html>
