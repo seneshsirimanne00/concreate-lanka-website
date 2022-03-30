@@ -1,0 +1,121 @@
+
+
+.navbar-toggle {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  position: fixed;
+  z-index: 999999;
+  top: 2rem;
+  right: 1rem;
+  background: #0f1a35;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 0;
+}
+.navbar-toggle .line {
+  fill: none;
+  transition-delay: 400ms, 0;
+  transition-property: stroke, stroke-dasharray, stroke-dashoffset;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+  stroke: #ffffff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.navbar-toggle .line.top {
+  stroke-dasharray: 40 139;
+}
+.navbar-toggle .line.bottom {
+  stroke-dasharray: 20 180;
+  stroke-dashoffset: -20px;
+}
+.navbar-toggle.active {
+  transform: rotate(45deg);
+  background: transparent;
+}
+.navbar-toggle.active .line {
+  stroke: #0f1a35;
+}
+.navbar-toggle.active .line.top {
+  stroke-dashoffset: -98px;
+}
+.navbar-toggle.active .line.bottom {
+  stroke-dashoffset: -138px;
+}
+.navbar-toggle:not(.active):hover .line.bottom {
+  stroke-dasharray: 40 180;
+  stroke-dashoffset: 0px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999998;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul {
+  width: 100%;
+  max-width: 400px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul li {
+  opacity: 0;
+}
+.navbar ul li a {
+  color: #0f1a35;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease 500ms;
+  position: relative;
+}
+.navbar ul li a:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  opacity: 0;
+  transition: opacity ease 500ms;
+}
+.navbar ul li a:hover {
+  letter-spacing: 3px;
+}
+.navbar ul li a:hover:before {
+  opacity: 0.2;
+}
+
+#bg-circle {
+  transform: scale(0);
+  width: 80px;
+  height: 80px;
+  /*background: rgba(16,114,47, 0.95);*/
+  background: rgb(255, 255, 255);
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  z-index: 999997;
+      background-repeat: no-repeat;
+  background-size: 15%;
+    background-position: 39% 60%;
+  background-image:url('../images/menu_img.png');
+}

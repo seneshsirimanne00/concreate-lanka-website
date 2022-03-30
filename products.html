@@ -3,30 +3,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Document</title>
 
-<!-- this is a comment -->
+<!-- this is a comment --><link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAf4QHAJVgFgCuYSoApVQpAKdnFgB1ShEAp1cpAK1hKQDx6dQAnGMWAK5qHQCzaSYAqqEXAP///wCLWRQAspgcAKRSKwCrXSkAoGIXAI9ZFAChTS4AnogZAKCXFQCuahsApFEsAKpcKgCyaSQAsmcoAKhZKQCvYykAdkoOAKZWKADdv5gAnGIVALt+IQB+dgsAsWYpALaOGgDl1qwApWgWAP78+wC2bh8AqGgWAO3d1AC7fiAAqq48ALBlKgCiihkAsm5UAPnz8QCoqhQAqlspALBlKQB9dQsAtJUeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4ODg4ODg4ODg4ODg4OAAAODg4ODg4OMg4ODg4ODgAADg4ODg4sGRUVDg4ODg4AAA4ODg41CBoHESQwDg4OAAAODiIFCxslDgEXECYODgAADjMGDworDg4ODhAmDg4AAA4zNyMODg4ODg4ODg4OAAAOMzctDg4ODg4ODg4ODgAADjM3LQ4ODg4ODg4ODg4AAA4zNy0ODg4ODg4ODg4OAAAOMx8UEykODg4OECcODgAADg4CKBgbLw4uDRAmDg4AAA4ODiEqDB4SIDYWCQ4OAAAODg4ODhwDNAQxDg4ODgAADg4ODg4ODh0ODg4ODg4AAA4ODg4ODg4ODg4ODg4OAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAAA=" rel="icon" type="image/x-icon" />
 <!-- this is a comment -->
 
 <!-- bootstrap version 5 css -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <!-- bootstrap version 5 css -->
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Add icon library -->
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+ 
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
+
+<!-- infinity slider styles css -->
+<link rel="stylesheet" href="splide.min.js/splide.min.css">
+<!-- infinity slider styles css -->
 
 <!-- styles css -->
 <link href="css/styles.css" rel="stylesheet">
 <!-- styles css -->
 
+<!-- styles css -->
+<link href="css/menu.css" rel="stylesheet">
+<!-- styles css -->
+
+<!-- menu -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="menu/style.css">
+<!-- menu -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+
 <!--media query css-->
 <link href="css/mediaquery.css" rel="stylesheet" type="text/css" media="screen">
 <!--media query css-->
-        
+
 <!-- AOS css animations -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- AOS css -->
 </head>
 <body>
+  <img src="images/desktop_logo.png" class="top-logo" alt="Logo">
+  <div class="bigpadding contact_button"><a href="#section_footer">
+    <button class="wt-btn_sign"><span class="wt-btn_sign-bound"><span data-width="#fff" data-text="Talk to us now!">Talk to us now!</span></span></button>
+  </a>  </div>
 
-  <!-- back to top button START -->
+  <a href="#" id="call_me">
+    <img src="images/callmesvg.svg" alt="call" class="call_me_button" />
+  </a>
+  
   <button onclick="topFunction()" id="back-to-top" title="Go to top">
     <b>
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
@@ -34,6 +70,30 @@
     </svg>
   </b>
   </button>
+  <div id="wrapper">
+    
+    <button class="navbar-toggle" id="toggle" type="button">
+  <svg viewBox="0 0 100 100" width="60">
+    <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+    <path class="line middle"d="m 30,50 h 40" />
+    <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+  </svg>
+    <!-- <span style="position: relative; top: -27px; font-family: Stag; left: -13px;"><b>MENU</b></span> -->
+  </button>
+
+  <div class="navbar">
+     <ul>
+        <li><a data-text="1" href="index.html">Home</a></li>
+        <li><a data-text="2" href="aboutus.html">About us </a></li>
+        <li><a data-text="3" href="products.html"> Our Products</a></li>
+        <li><a data-text="4" href="#section_footer">contact us  </a></li>
+        <li><a data-text="5" href="#">Blog </a></li>
+        
+      </ul>
+  </div>
+    <div id="bg-circle"></div>
+  </div>
+  
 
   <div id="sidebar">
     <a href="#concrete-spacers" class="home">Concrete spacers</a><br>
@@ -42,30 +102,7 @@
     <a href="#clay-bricks">Clay brick</a><br> 
   </div>
 
-  <script>
-    //Get the button
-    var mybutton = document.getElementById("back-to-top");
-    var sidebar = document.getElementById("sidebar");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        mybutton.style.display = "block";
-        sidebar.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-        sidebar.style.display = "none";
-      }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
+  
 
     <!-- back to top button END -->
 
@@ -1080,6 +1117,113 @@
     <!-- products 5th section end -->
 
 </div> <!-- bootstrap script --> 
+<!-- footer section -->
+
+<div id="section_footer">
+  <div class="row footer_row" style=" height: 100vh;">
+   
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5"> 
+    
+    <div class="container contact_box" data-aos="fade-up" data-aos-duration="2000">
+      <h1 style="font-weight: bold;font-size: 400%;">Say hi!</h1>
+      <form id="myForm" class="contact_form">
+        <label data-aos="fade-down" data-aos-duration="1000">Full Name</label>
+        <br/>
+        <input class="contact_input" name="full_name" />
+        <br/><br/>
+        <label data-aos="fade-down" data-aos-duration="1000">Email</label>
+        <br/>
+        <input class="contact_input" name="email" />
+        <br/><br/>
+      
+     
+        <label data-aos="fade-down" data-aos-duration="1000">Message</label>
+        <br/>
+        <input class="contact_input_msg" name="message" />         
+        <br/>
+        <br/>
+      </form>
+      <button onclick="SubForm()">Submit</button>
+  
+  
+    </div>
+    <p  style="margin-left: 20px;font-weight: lighter; font-size: 10px;" class="inate">Craftmanship <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>
+  
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+      <p data-aos="fade-up" data-aos-duration="2000" style="color: #A5A5A5;" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+         consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+         <br>
+        
+      <ul data-aos="fade-right" data-aos-duration="2000">
+        <li>+94 293 21 1240</li>
+        <li>  +94 293 21 1240</li>
+        <li> +94 293 21 1240</li>
+      </ul>
+
+      <br> <p data-aos="fade-right" data-aos-duration="2000">
+        573/3,<br>
+Ward place,<br>
+Colmbo,<br>
+Sri lanka.<br>
+13200.
+      </p>
+    
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in" data-aos-duration="2000">
+      <ul>
+        <li> home</li>
+        <li> About us</li>
+        <li> Our Products</li>
+        <li> Projects</li>
+        </ul>
+
+        <img src="images/footer_pic.png" class="img-fluid footer_img"><br>
+
+        <div class="wrapper">
+          <div class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fa fa-facebook-f"></i></span>
+          </div>
+     
+          <div class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fa fa-instagram"></i></span>
+          </div>
+          <div class="icon github">
+            <div class="tooltip">Linked in</div>
+            <span><i class="fa fa-linkedin"></i></span>
+          </div>
+        
+        </div>
+        
+
+      
+     
+     
+
+    </div>
+    <div class="row">
+    <h3 style="text-align: center;">All rights reserved 2022</h3>
+   
+    
+  
+  
+  
+  </div>
+  </div>
+</div>
+
+<!-- footer section end -->
 
 </body>
 
@@ -1103,6 +1247,36 @@
   }
   })
 </script>
+
+  <!-- menu -->
+  <script src='menu/gsap.min.js'></script>
+  <script  src="menu/script.js"></script>
+  <!-- menu -->
+  
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("back-to-top");
+    
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 10) {
+        mybutton.style.display = "block";
+        sidebar.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+        sidebar.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 
 
 </html>

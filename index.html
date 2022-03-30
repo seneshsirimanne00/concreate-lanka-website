@@ -17,6 +17,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Add icon library -->
 
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+ 
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
+
 <!-- infinity slider styles css -->
 <link rel="stylesheet" href="splide.min.js/splide.min.css">
 <!-- infinity slider styles css -->
@@ -24,6 +29,19 @@
 <!-- styles css -->
 <link href="css/styles.css" rel="stylesheet">
 <!-- styles css -->
+
+<!-- styles css -->
+<link href="css/menu.css" rel="stylesheet">
+<!-- styles css -->
+
+<!-- menu -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="menu/style.css">
+<!-- menu -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 
 
@@ -37,8 +55,79 @@
 
 </head>
 <body>
+  <img src="images/desktop_logo.png" class="top-logo" alt="Logo">
+  <div class="bigpadding contact_button"><a href="#section_footer">
+    <button class="wt-btn_sign"><span class="wt-btn_sign-bound"><span data-width="#fff" data-text="Talk to us now!">Talk to us now!</span></span></button>
+  </a>  </div>
+
+  <a href="#" id="call_me">
+    <img src="images/callmesvg.svg" alt="call" class="call_me_button" />
+  </a>
+  
+  <button onclick="topFunction()" id="back-to-top" title="Go to top">
+    <b>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+  </b>
+  </button>
+  <div id="wrapper">
+    
+    <button class="navbar-toggle" id="toggle" type="button">
+  <svg viewBox="0 0 100 100" width="60">
+    <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+    <path class="line middle"d="m 30,50 h 40" />
+    <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+  </svg>
+    <!-- <span style="position: relative; top: -27px; font-family: Stag; left: -13px;"><b>MENU</b></span> -->
+  </button>
+
+  <div class="navbar">
+     <ul>
+        <li><a data-text="1" href="index.html">Home</a></li>
+        <li><a data-text="2" href="aboutus.html">About us </a></li>
+        <li><a data-text="3" href="products.html"> Our Products</a></li>
+        <li><a data-text="4" href="#section_footer">contact us  </a></li>
+        <li><a data-text="5" href="#">Blog </a></li>
+        
+      </ul>
+  </div>
+    <div id="bg-circle"></div>
+  </div>
+  
+
+
+  
+  <header><!-- caption -->
+    <div class="carousel-caption" style="z-index: 8;position: absolute;left: 100px;bottom: 100px;" >
+     <div class="row " >
+      
+           <div class="col-lg-12 col-md-12 col-md-12 col-xs-12">
+             
+             <div class="row land_sec_text " data-aos="fade-up">
+               
+              <p data-aos="fade-up" data-aos-duration="1500" class="land_sec_heading " style="text-align: left;">Best Cement</p> 
+              <hr data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine" class="land_sec_hr">
+              <p style="color: rgb(0, 0, 0);text-align: left;" class="land_sec_desc " >
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,<br> consectetur, adipisci velit...
+             </p>
+
+             </div>
+           
+
+       </div>
+     </div>
+   </div>
+ <!-- caption --></header>
 
 <img src="images/desktop_logo.png" class="top-logo" alt="Logo">
+<svg class="arrows" style="z-index: 8;">
+  <path class="a1" d="M0 0 L30 32 L60 0"></path>
+  <path class="a2" d="M0 20 L30 52 L60 20"></path>
+  <path class="a3" d="M0 40 L30 72 L60 40"></path>
+</svg>
 
 
 <!-- land screen section -->
@@ -49,14 +138,17 @@
     data-aos-offset="0">
 
         <!-- Indicators/dots -->
+        <div style="">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button " data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button " data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button " data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
+      </div>
+
         
         <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height: 100vh;">
           <div class="carousel-item active">
             <img src="images/wal_test.png" alt="Los Angeles" class="d-block" style="width:100%">
           </div>
@@ -91,127 +183,114 @@
             <p data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
                consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
-               <br>
+               
             <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
                  consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+
+                 <button class="cta" data-aos="fade-right" data-aos-duration="1500">
+                  <span class="hover-underline-animation"> Learn more  </span>
+                  <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                    <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                  </svg>
+                </button>
+
+
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <img src="images/homepage_pro_1.png" class="img-fluid" alt="..." data-aos="zoom-out-left" data-aos-duration="1500" style="float: left;">
-            <img src="images/homepage_pro_2.png" class="img-fluid" alt="..." data-aos="zoom-out-left" data-aos-duration="1500">
+            <img src="images/homepage_pro_1.png" class="img-fluid product_home_img d-inline" alt="..." data-aos="zoom-out-left" data-aos-duration="1500">
+            <img src="images/homepage_pro_2.png" class="img-fluid product_home_img d-inline" alt="..." data-aos="zoom-out-left" data-aos-duration="1500">
           </div>
         </div>
     </div>
 <!-- homepage product section end -->
 
 <!-- homepage project section -->
-    <div class="container-fluid" >
+    
         <div class="row projects_row">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-            <div class="splide splide2">
-              <div class="splide__arrows">
-                <button class="splide__arrow splide__arrow--prev slider_arrow_projects_left">
-                  Prev
-                </button>
-                <button class="splide__arrow splide__arrow--next slider_arrow_projects_right">
-                  Next
-                </button>
-              </div>
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide projects_slide_home">
-                    <img src="images/project_img.png" alt="" class="project_slider_image">
-                    <div class="project_slice_whitebox">
-                      <p class="project_slide_text1">Avicci</p>
-                      <p class="project_slide_text2">2022.01.23</p>
-                    <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify; " class="project_slide_text3">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
-                       consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                      </div>
-                  </li>
-
-                  <li class="splide__slide projects_slide_home">
-                    <img src="images/project_img.png" alt="" class="project_slider_image">
-                    <div class="project_slice_whitebox">
-                      <p class="project_slide_text1">Avicci</p>
-                      <p class="project_slide_text2">2022.01.23</p>
-                    <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify; " class="project_slide_text3">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
-                       consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                      </div>
-                  </li>
-
-                  <li class="splide__slide projects_slide_home">
-                    <img src="images/project_img.png" alt="" class="project_slider_image">
-                    <div class="project_slice_whitebox">
-                      <p class="project_slide_text1">Avicci</p>
-                      <p class="project_slide_text2">2022.01.23</p>
-                    <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify; " class="project_slide_text3">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
-                       consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                      </div>
-                  </li>
-
-                  <li class="splide__slide projects_slide_home">
-                    <img src="images/project_img.png" alt="" class="project_slider_image">
-                    <div class="project_slice_whitebox">
-                      <p class="project_slide_text1">Avicci</p>
-                      <p class="project_slide_text2">2022.01.23</p>
-                    <p data-aos="fade-up" data-aos-duration="2500" style="text-align: justify; " class="project_slide_text3">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
-                       consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                      </div>
-                  </li>
-                 
-                </ul>
-
-                <ul class="splide__pagination">
-                  <li>
-                    <button
-                      class="splide__pagination__page is-active"
-                      type="button"
-                      aria-controls="splide01-slide01"
-                      aria-label="Go to slide 1"
-                      aria-current="true"
-                    >
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      class="splide__pagination__page"
-                      type="button"
-                      aria-controls="splide01-slide02"
-                      aria-label="Go to slide 2"
-                    >
-                    </button>
-                  </li>
-                  ......
-                </ul>
-              </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 " style="    padding-right: 0px">
+            <div id="quad">
+              <figure>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rose-red-wine.jpg" alt="rose-red-wine">
+              <figcaption>Rose Red Wine</figcaption>
+              </figure>
+              <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/green-glass-bottle.jpg" alt>
+                <figcaption>Green Glass Bottle</figcaption>
+              </figure>
+              <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/guinness-barrels.jpg" alt>
+                <figcaption>Guinness Barrels, Dublin</figcaption>
+              </figure>
+              <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/crystal-skull-vodka.jpg" alt>
+                <figcaption>Crystal Skull Vodka</figcaption>
+              </figure>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 product-text"> 
-            <h1 data-aos="fade-up" data-aos-duration="1500">Our <span style="color: #898989;">Projects</span></h1>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 product-text" style="background-color: #F2F3EF;"> 
+            <h1 data-aos="fade-up" data-aos-duration="1500" style="margin-top:90px;">Our <span style="color: #898989;">Projects</span></h1>
             <hr data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
-            <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+            <p  data-aos="fade-up" data-aos-duration="1500" style="text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
                consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
-               <br>
+              
             <p  data-aos="fade-up" data-aos-duration="2000" style="text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
                  consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                 <button class="cta" data-aos="fade-right" data-aos-duration="1500">
+                  <span class="hover-underline-animation"> View all  </span>
+                  <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                    <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                  </svg>
+                </button>
+
+
           </div>
         </div>
-    </div>
+    
 <!-- homepage project section end -->
+<div class="row client_text" style="">
+          
+  <h1 data-aos="fade-up" data-aos-duration="1500">Project <span style="color: #898989;">Categories</span></h1>
+  <hr data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine" style="" class="client_line">
+  <p data-aos="fade-up" data-aos-duration="2000" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
+     consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+     <br>
+  
+
+
+</div>
+<div class="row container1" >
+  
+  <div class="box1">
+    <img src="https://source.unsplash.com/1000x800">
+    
+  </div>
+  <div class="box1">
+    <img src="https://source.unsplash.com/1000x802">
+    <span  ></span>
+  </div>
+  <div class="box1">
+    <img src="https://source.unsplash.com/1000x804">
+    <span ></span>
+  </div>
+  <div class="box1">
+    <img src="https://source.unsplash.com/1000x806">
+    <span ></span>
+  </div>
+</div>
 
 <!-- homepage clients section -->
-    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+    <div class="container clients_sec" data-aos="fade-up" data-aos-duration="1500">
         <div class="row client_text" style="">
           
-            <h1 data-aos="fade-up" data-aos-duration="1500">Products <span style="color: #898989;">Overview</span></h1>
+            <h1 data-aos="fade-up" data-aos-duration="1500">Our <span style="color: #898989;">Clientele</span></h1>
             <hr data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine" style="" class="client_line">
@@ -225,97 +304,121 @@
         </div>
       
         <div class="row">
-          <div class="splide splide1">
-            <div class="splide__arrows">
-              <button class="splide__arrow splide__arrow--prev d-none">
-                Prev
-              </button>
-              <button class="splide__arrow splide__arrow--next d-none">
-                Next
-              </button>
-            </div>
+          <div class="container">
             
-            
-            <div class="splide__track">
-              
-              <ul class="splide__list">
-                <li class="splide__slide"><img src="images/client_logo1.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo2.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo3.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo2.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo4.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo5.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo1.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo2.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo3.png" alt=""></li>
-                <li class="splide__slide"><img src="images/client_logo1.png" alt=""></li>
-               
-              </ul>
-
+             <section class="customer-logos slider">
+                <div class="slide"><img src="images/client_logo1.png"></div>
+                <div class="slide"><img src="images/client_logo2.png"></div>
+                <div class="slide"><img src="images/client_logo3.png"></div>
+                <div class="slide"><img src="images/client_logo4.png"></div>
+                <div class="slide"><img src="images/client_logo1.png"></div>
+                <div class="slide"><img src="images/client_logo2.png"></div>
+                <div class="slide"><img src="images/client_logo3.png"></div>
+                <div class="slide"><img src="images/client_logo4.png"></div>
+                <div class="slide"><img src="images/client_logo2.png"></div>
+                <div class="slide"><img src="images/client_logo1.png"></div>
+                
+             </section>
             </div>
-          </div>
         </div>
         </div>
     
 <!-- homepage clients section end -->
+<div class="block">
+  <img src="images/paralaxxx.png" data-speed="1" class="img-parallax">
+  <h2>Building the future <br> one step at a time.</h2>
+  
+</div>
 
 <!-- homepage testimonials section -->
 <!-- homepage clients section -->
-<div class="container" data-aos="fade-up" data-aos-duration="1500">
+<div class="container" data-aos="fade-up" data-aos-duration="1500" style="margin-top: 60px;">
   <div class="row " style="">
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 product-text" style="padding-top: 100px;"> 
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 " style=""> 
     
-      <p data-aos="fade-up" data-aos-duration="1500" class="">What Our <br>
+      <p data-aos="fade-up" data-aos-duration="1500" class=" testimonials_head">What Our <br>
         Customer say.</p>
       </div>
       
     
     
-  </div>
+ 
 
-  <div class="row">
+  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-8">
+    <section class="testimonials py-5 text-white px-1 px-md-5 margin-top-xl">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            
+            <div class="carousel-controls testimonial-carousel-controls">
+              <div class="control d-flex align-items-center justify-content-center prev mt-3"><i class="fa fa-chevron-left"></i></div>
+              <div class="control d-flex align-items-center justify-content-center next mt-3"><i class="fa fa-chevron-right"></i></div>
     
-  </div>
+              <div class="testimonial-carousel">
+                <div class="h5 font-weight-normal one-slide mx-auto">
+                  <div class="testimonial  px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                    <div class="message text-center blockquote " style="font-weight: lighter;">"They’ve been consistent throughout the years and grown together with us. Even as they’ve grown, they haven’t lost sight of what they do. Most of their key resources are still with them, which is also a testament to their organization."</div>
+                    <div class="blockquote-footer  "  >Jim Joe, WebCorpCo</div>
+                  </div>
+                </div>
+                <div class="h5 font-weight-normal one-slide mx-auto">
+                  <div class="testimonial  px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                    <div class="message text-center blockquote "  style="font-weight: lighter;">"Miami Beach Visitor and Convention Authority uses Solodev to craft a website capable of representing its diverse residents. The website features a newsroom with the latest events, an interactive calendar, and a mobile app that puts the
+                      resources of VCA at a user’s fingertips."</div>
+                    <div class="blockquote-footer  "  >Jim Joe, WebCorpCo</div>
+                  </div>
+                </div>
+                <div class="h5 font-weight-normal one-slide mx-auto">
+                  <div class="testimonial  px-3 text-center  d-flex flex-direction-column justify-content-center flex-wrap align-items-center">
+                    <div class="message text-center blockquote "  style="font-weight: lighter;">Solodev is a great company to partner with! We are extremely happy with the software, service, and support.</div>
+                    <div class="blockquote-footer  "  >Jim Joe, WebCorpCo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </div>  </div>
   </div>
     
 <!-- homepage testimonials section end -->
 
+
 <!-- footer section -->
 
-<div style="z-index: 900;">
-    <div class="row projects_row" style=" height: 100vh;">
+<div id="section_footer">
+    <div class="row footer_row" style=" height: 100vh;">
      
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5"> 
       
       <div class="container contact_box" data-aos="fade-up" data-aos-duration="2000">
-        <h1 style="font-weight: bold;">Say hi!</h1>
-        <form action="action_page.php" style="margin-top:20px ;">
-
-          <label for="fname"> Name*</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-          <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"> 
-          <label class="" for="cnumber">Phone*</label>
-          <input class=""type="text" id="cnumber" name="cnumber" placeholder="contact number"></div>
-          
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"> 
-          
-          <label class="" for="email">Email*</label>
-          <input class=""type="text" id="email" name="email" placeholder="example@email.com"></div>
-          
-        </div>
-          <label for="subject">Your message*</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-      
+        <h1 style="font-weight: bold;font-size: 400%;">Say hi!</h1>
+        <form id="myForm" class="contact_form">
+          <label data-aos="fade-down" data-aos-duration="1000">Full Name</label>
+          <br/>
+          <input class="contact_input" name="full_name" />
+          <br/><br/>
+          <label data-aos="fade-down" data-aos-duration="1000">Email</label>
+          <br/>
+          <input class="contact_input" name="email" />
+          <br/><br/>
+        
        
-          <button class="button button2" type="submit">Submit<span class="bline">______________</span> </button>
-          
-          
-          
-          
-        </form></div>
-      
+          <label data-aos="fade-down" data-aos-duration="1000">Message</label>
+          <br/>
+          <input class="contact_input_msg" name="message" />         
+          <br/>
+          <br/>
+        </form>
+        <button onclick="SubForm()">Submit</button>
+    
+    
+      </div>
+      <p  style="margin-left: 20px;font-weight: lighter; font-size: 10px;" class="inate">Craftmanship <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>
+    
       
       
       
@@ -324,7 +427,10 @@
       
       
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <h1 data-aos="fade-up" data-aos-duration="1500">Project <span style="color: #898989;">Categories</span></h1>
+        
+       
         <p data-aos="fade-up" data-aos-duration="2000" style="color: #A5A5A5;" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
            consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
@@ -343,27 +449,53 @@ Colmbo,<br>
 Sri lanka.<br>
 13200.
         </p>
+        <p data-aos="fade-up" data-aos-duration="2000" style="color: #A5A5A5;" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+           <br>
       
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2" data-aos="fade-up" data-aos-duration="2000">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in" data-aos-duration="2000">
         <ul>
           <li> home</li>
           <li> About us</li>
           <li> Our Products</li>
           <li> Projects</li>
+          </ul>
+
+          <img src="images/footer_pic.png" class="img-fluid footer_img"><br>
+
+          <div class="wrapper">
+            <div class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fa fa-facebook-f"></i></span>
+            </div>
+       
+            <div class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fa fa-instagram"></i></span>
+            </div>
+            <div class="icon github">
+              <div class="tooltip">Linked in</div>
+              <span><i class="fa fa-linkedin"></i></span>
+            </div>
+          
+          </div>
           
 
-        </ul>
+        
+       
+       
 
       </div>
-
-      <h3 style="text-align: center;">All rights reserved 2022</h3>
-      <p  style="margin-left: 20px;font-weight: lighter; font-size: 10px;">solutins by <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>
-      <a href="" target="_blank" class="fa fa-facebook  d-inline"></a>
-              <a href="" target="_blank" class="fa fa-instagram  d-inline"></a>
-              <a href="" target="_blank" class="fa fa-linkedin  d-inline"></a>
-              <a href="" target="_blank" class="fa fa-youtube  d-inline"></a>
+      <div class="row">
+      <h3 style="text-align: center;font-size: 100%;">All rights reserved Concreate Lanka Pvt Ltd 2022</h3>
+     
+      
+    
+    
+    
+    </div>
     </div>
   </div>
 
@@ -371,6 +503,32 @@ Sri lanka.<br>
 
 
 </body>
+
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script>
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/Je8pa4r9GHe6tXvG/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
 
 <!-- bootstrap script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -401,7 +559,7 @@ Sri lanka.<br>
 </script>
 
 <script>
-  new Splide( '.splide1' ).mount( window.splide.Extensions );
+  new Splide( '.splide2' ).mount( window.splide.Extensions );
 </script>
 
 <script>
@@ -409,17 +567,15 @@ Sri lanka.<br>
 
 
 
-var splide = new Splide( '.splide1', {
+var splide = new Splide( '.splide2', {
   type   : 'loop',
   drag   : 'free',
   
   
-  perPage: 4,
+  perPage: 1,
   perMove: 1,
   
-  autoScroll: {
-    speed: 2,
-  },
+  
   
 } );
 
@@ -428,41 +584,124 @@ var splide = new Splide( '.splide1', {
 splide.mount();
 </script>
 
+
+
+	
+
+
 <script>
+$(document).ready(function(){
+  $('.customer-logos').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 4
+          }
+      }, {
+          breakpoint: 520,
+          settings: {
+              slidesToShow: 3
+          }
+      }]
+  });
+});</script>
 
+<script>
+  $(document).ready(function() {
+  $(".testimonial-carousel").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    prevArrow: $(".testimonial-carousel-controls .prev"),
+    nextArrow: $(".testimonial-carousel-controls .next")
+  });
+});
+</script>
 
+<script>
+  var quadimages = document.querySelectorAll("#quad figure");
+for(i=0; i<quadimages.length; i++) {
+  quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+}
+</script>
 
-
-
-
-  var splide = new Splide( '.splide2', {
-    type  : 'loop' ,
-  rewind: true,
-  autoplay: true,
+<script>
+  $('.img-parallax').each(function(){
+    var img = $(this);
+    var imgParent = $(this).parent();
+    function parallaxImg () {
+      var speed = img.data('speed');
+      var imgY = imgParent.offset().top;
+      var winY = $(this).scrollTop();
+      var winH = $(this).height();
+      var parentH = imgParent.innerHeight();
   
-    
-    
-    perPage: 1,
-
-   
-    
-    
-    
-    
-  } );
-
   
-
-  splide.on( 'pagination:mounted', function( data ) {
-  // data.items contains all dot items
-  data.items.forEach( function( item ) {
-    item.button.textContent = String( item.page + 1 );
-  } );
-} )
+      // The next pixel to show on screen      
+      var winBottom = winY + winH;
   
-  splide.mount();
+      // If block is shown on screen
+      if (winBottom > imgY && winY < imgY + parentH) {
+        // Number of pixels shown after block appear
+        var imgBottom = ((winBottom - imgY) * speed);
+        // Max number of pixels until block disappear
+        var imgTop = winH + parentH;
+        // Porcentage between start showing until disappearing
+        var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+      }
+      img.css({
+        top: imgPercent + '%',
+        transform: 'translate(-50%, -' + imgPercent + '%)'
+      });
+    }
+    $(document).on({
+      scroll: function () {
+        parallaxImg();
+      }, ready: function () {
+        parallaxImg();
+      }
+    });
+  });</script>
+  
+  <!-- menu -->
+<script src='menu/gsap.min.js'></script>
+<script  src="menu/script.js"></script>
+<!-- menu -->
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("back-to-top");
+  
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 10) {
+      mybutton.style.display = "block";
+      sidebar.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+      sidebar.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
   </script>
-<!-- splide script -->
+
 
 
 
