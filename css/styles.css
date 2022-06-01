@@ -483,7 +483,8 @@ height: auto;
 background-repeat: no-repeat;
 }
 
-.inner_page_shape{                                      
+.inner_page_shape{    
+width: 100vw;                                  
 position: absolute;
 top: 150px;
 right: 0px;     
@@ -612,13 +613,19 @@ right: 0px;
 }
 
 .products_page_top_img{
-    margin-bottom: 50px;
-    margin-left: 110px;
+    
+}
+
+.mid{
+  text-align: center;
+}
+
+.slab{
+  height: 332px;
 }
 
 .products_page_img{
   width: 60%;
-  margin-left: 110px;
 }
 
 .products_page_top_middle_line{

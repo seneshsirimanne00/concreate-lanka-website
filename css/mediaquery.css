@@ -55,12 +55,57 @@
 
 
 
+img{
+    border: 2px solid red;
+}
+
+.products_page_top_img {
+    padding: 80px 40px 80px 40px;
+}
+
+.products_page_product_card_text_part {
+    padding: 20px 30px 50px 30px;
+}    
+
+.product_price_mySlidestwo{
+    flex-direction: column;
+}
+
+.top-card-top_row{
+    margin-bottom: 50px;
+}
+
+.product_price_mySlidesthree{
+    flex-direction: column;
+}
+
+.product_price_mySlides{
+    flex-direction: column;
+}
+
+.product_price_mySlides1{
+    flex-direction: column;
+}
+
+.product_price_mySlidesfour{
+    flex-direction: column;
+}
+
+.hide_tablet{
+    display: none !important;
+}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 767px) {
 
-	
+    .top-logo {
+            position: absolute;
+    }    
+    .smcenter{
+        text-align: center !important;
+    }
 
 }
 
@@ -68,6 +113,13 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
+    .smcenter{
+        text-align: center !important;
+    }
+
+    .smimgpadding{
+        padding: 0 30px;
+    }
 
 
 }
@@ -75,7 +127,13 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 375px) {
 
+    .smcenter{
+        text-align: center !important;
+    }
 
+    .smimgpadding{
+        padding: 0 30px;
+    }
 
 }
 
