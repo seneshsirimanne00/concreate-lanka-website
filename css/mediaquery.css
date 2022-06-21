@@ -67,7 +67,6 @@
             width: 70%;}
 
 
-
 .products_page_top_img {
     padding: 80px 40px 80px 40px;
 }
@@ -102,6 +101,24 @@
 
 .hide_tablet{
     display: none !important;
+}
+
+.contact_input{
+    width: 100%;
+    
+  }
+  
+  .contact_input_msg{
+    width: 100%;
+  }
+
+  .products_page_top_middle_line {
+    border-left: 0px solid black;
+}
+
+.copyRight_text{
+    font-size: medium;
+    padding: 30px 62px;
 }
 
 }
