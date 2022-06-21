@@ -6,7 +6,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1920px) {
+    .footer_background{
+        height: 100vh;
 
+    }
 
 
 }
@@ -28,8 +31,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
-
-
+    .footer_link_list{
+        display: none;
+    }
+    .footer_img{
+        display: none;
+    }
 
 
 }
@@ -53,11 +60,13 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+    .contact_input {
+        width: 70%;}
+    
+        .contact_input_msg {
+            width: 70%;}
 
 
-img{
-    border: 2px solid red;
-}
 
 .products_page_top_img {
     padding: 80px 40px 80px 40px;
@@ -99,6 +108,17 @@ img{
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 767px) {
+
+    .contact_input {
+        width: 100%;}
+    
+        .contact_input_msg {
+            width: 100%;}
+
+    .footer_background{
+        height: 150vh;
+
+    }
 
     .top-logo {
             position: absolute;
