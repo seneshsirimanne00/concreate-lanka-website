@@ -5,8 +5,6 @@ html{
 }
 ::-webkit-scrollbar {
 
-	
-  
 }
 
 /* Track */
@@ -29,7 +27,9 @@ html{
   height: 1px;
 }
 
-
+p{
+  font-size: 18px; /* requested this font size for p*/
+}
 
 .arrows {
   width: 60px;
