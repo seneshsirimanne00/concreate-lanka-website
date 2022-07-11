@@ -143,8 +143,9 @@ p{
 .land_sec_heading{
   color: #292A77;
   font-weight: bold;
-  font-size: 90px;
- 
+  font-size: 55px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.31);
+  text-align: left;
 }
 .land_sec_hr{
   width: 550px;
@@ -629,10 +630,6 @@ right: 0px;
   width: 60%;
 }
 
-.products_page_top_middle_line{
-    border-left: 1px solid black;
-}
-
 .inner_page_triangle_shape{                                      
     position: relative;
     top: 100px;
@@ -648,6 +645,7 @@ right: 0px;
 
 .products_page_product_card{
     margin-bottom: 50px;
+    border-bottom: 2px solid #292A77
 }
 
 .products_page_product_card_text_part{
