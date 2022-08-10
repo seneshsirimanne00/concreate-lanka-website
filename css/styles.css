@@ -29,6 +29,7 @@ html{
 
 p{
   font-size: 17px; /* requested this font size for p*/
+  text-align: justify;
 }
 
 .arrows {
@@ -483,13 +484,15 @@ input[type=text], select, textarea {
 background-image: url('../images/inner_background.png');
 height: auto;
 background-repeat: no-repeat;
+background-size: cover;
+padding: 0 50px;
 }
 
 .inner_page_shape{    
 width: 100vw;                                  
 position: absolute;
 top: 150px;
-right: 0px;     
+right: -29px     
 }
 
 /* Inner pages css end */
@@ -950,6 +953,10 @@ right: 0px;
 }
 /*abouts us page css */
 
+.aboutus_top_row{
+  height: 300px;
+}
+
 .abouts_us_heading{
   font-size: 70px;
   font-weight:700;
@@ -960,16 +967,23 @@ right: 0px;
 
 .about_us_first_t{
   margin-top: 140px;
+  font-size: 20px;
+}
+
+.certification_aboutus{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
 }
 
 .certi_aboutus{
-  width: 100px;
+  height: 160px; 
+  width: auto;
 }
 
-.about_first_img{
-  position: relative;
-  left: -59px;
-  top: -119px;
+.img-fluid_about{
+  max-width: 80%;
+  height: auto;
 }
 
 .about_us_second_t{ 
@@ -977,17 +991,12 @@ right: 0px;
 }
 
 .about_sec_text_section{
-  padding-top: 30px;
+  padding-top: 190px;
 }
 
 .about_us_mission{
   padding: auto 200px;
 }
-
-
-
-
-
 
 
 
@@ -1430,7 +1439,7 @@ padding:0 22px;
   position: relative;
   width: 15rem;
   height: 15rem;
-  margin: 4rem;
+  margin: 4rem 7rem;
 }
 
  .box_team:hover .imgBox_team {
@@ -1489,6 +1498,11 @@ padding:0 22px;
   font-size: 1.4rem;
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+.team_box_container{
+  padding: 0 247px;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {

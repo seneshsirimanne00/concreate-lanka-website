@@ -121,6 +121,48 @@
     padding: 30px 62px;
 }
 
+.certification_aboutus{
+    flex-direction: column;
+    padding: 0;
+}
+
+.about_sec_text_section {
+    padding-top: 40px;
+}
+
+/* about us page */
+
+.aboutus_top_row{
+    height: 140px;
+  }
+
+.abouts_us_heading {
+    font-size: 55px;
+}
+
+.box_team {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin: 3rem 0rem;
+}
+
+.imgBox_team img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    resize: both;
+}
+
+.certi_aboutus {
+    padding: 20px;
+}
+
+.about_us_first_t {
+    margin-top: 34px;
+    font-size: 20px;
+}
+
 }
 
 /* Extra Small Devices, Phones */
