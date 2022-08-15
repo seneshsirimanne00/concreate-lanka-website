@@ -44,10 +44,7 @@ html{
 .socket{
   width: 100px;
   height: 100px;
-  position: absolute;
-  left: 50%;
   margin-left: -100px;
-  top: 50%;
   margin-top: -100px;
 }
 
@@ -651,7 +648,6 @@ input[type=text], select, textarea {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    padding: 200px auto;
 }
 
 .contact_input{
@@ -1044,6 +1040,9 @@ right: -29px
   }
   .product_price_mySlides {display: none}
 
+  .products_page_top_heading{
+    margin-top: 200px;
+  }
 
   /* Slideshow container */
   .product_price_slideshow-container {

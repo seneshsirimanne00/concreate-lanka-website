@@ -76,6 +76,13 @@
         .contact_input_msg {
             width: 70%;}
 
+              .products_page_top_heading{
+    margin-top: 200px;
+  }
+
+.products_page_top_heading{
+    margin-top: 110px;
+}
 
 .products_page_top_img {
     padding: 80px 40px 80px 40px;
@@ -185,12 +192,26 @@
             width: 100%;}
 
     .footer_background{
-        height: 200vh;
+        height: 220vh;
 
+    }
+
+    .contact_box{
+        margin-top: 100px;
+    }
+
+    .footer_row {
+        padding-top: 10px;
     }
 
     .footer_mob_padding{
         padding: 10px 121px;
+    }
+
+    .inate {
+        position: relative;
+        bottom: -95px;
+        text-align: center;
     }
 
     .top-logo {
@@ -218,10 +239,14 @@
     }
     .land_sec_text {
         position: relative;
-        bottom: -144px;
-        left: -73px;
+        bottom: -37px;
+        left: -56px;
     
     }
+
+    .land_sec_heading{
+        font-size: 45px;
+      }
 
     .product-text {
         padding: 29px;

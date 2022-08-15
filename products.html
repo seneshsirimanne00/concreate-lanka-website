@@ -66,13 +66,13 @@
   
   <img src="images/desktop_logo.png" class="top-logo" alt="Concrete lanka">
 
-  <!-- <div class="bigpadding contact_button hide_tablet"><a href="#section_footer">
+  <div class="bigpadding contact_button hide_tablet"><a href="#section_footer">
     <button class="wt-btn_sign"><span class="wt-btn_sign-bound"><span data-width="#fff" data-text="Talk to us now!">Talk to us now!</span></span></button>
   </a>  </div>
 
   <a href="#" id="call_me" class="hide_tablet">
     <img src="images/callmesvg.svg" alt="call" class="call_me_button" />
-  </a>-->
+  </a>
   
   <button onclick="topFunction()" id="back-to-top" title="Go to top" >
       <b>
@@ -113,7 +113,7 @@
 
     <!-- back to top button END -->
 
-  <img  src="images/inner_shape.png" alt="Concrete spacers in sri lanka" class="inner_page_shape .d-none .d-sm-block"  data-aos-duration="1000" style="z-index: 6;">
+  <img  src="images/inner_shape.png" alt="Concrete spacers in sri lanka" class="inner_page_shape .d-none .d-sm-block hide_medium"  data-aos-duration="1000" style="z-index: 6;">
       </div>
 
       
@@ -348,7 +348,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-duration="1500">
           <div class="row products_page_top">
-            <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10" style="margin-top: 200px;">
+            <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 products_page_top_heading"  >
               <br>
               <br>
               <h1 data-aos="fade-up" data-aos-duration="1500">Products<span style="color: #898989;">Overview</span></h1>
@@ -1870,13 +1870,16 @@
     <!-- products 5th section end -->
 
  </div> 
-
-  <!-- footer section -->
-
-  
-
-  <!-- footer section end -->
 </div>
+
+<!-- footer two section -->
+<div class="container" >
+  <br>
+  <h3 style="text-align: center;font-size: 100%; ">All rights reserved Concreate Lanka Pvt Ltd 2022</h3>
+  <br>
+</div>
+<!-- footer two section -->
+
 </body>
  <!-- bootstrap script   -->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -1911,7 +1914,7 @@ function SubForm (){
 <!-- aos script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({disable: 'mobile'});
   </script>
 <!-- aos script -->
 

@@ -80,11 +80,11 @@
 <body>
   <div>
     <img src="images/desktop_logo.png" class="top-logo" alt="Concrete lanka Logo">
-    <div class="bigpadding contact_button"><a href="#section_footer">
+    <div class="bigpadding contact_button hide_medium"><a href="#section_footer">
       <button class="wt-btn_sign"><span class="wt-btn_sign-bound"><span data-width="#fff" data-text="Talk to us now!">Talk to us now!</span></span></button>
     </a>  </div>
 
-    <a href="#" id="call_me">
+    <a href="#" id="call_me" class="hide_medium">
       <img src="images/callmesvg.svg" alt="call" class="call_me_button" />
     </a>
     
@@ -120,30 +120,17 @@
     </div>
     
     <header><!-- caption -->
-      <div class="carousel-caption" style="z-index: 8;position: absolute;left: 100px;bottom: 100px;" >
-      <div class="row " >
-        
-            <div class="col-lg-12 col-md-12 col-md-12 col-xs-12">
-              
-              <div class="row land_sec_text " data-aos="fade-up">
-                
-                <h1 data-aos="fade-up" data-aos-duration="1500" class="land_sec_heading ">Sri Lanka’s Finest Fibre <br>Reinforced Concrete Spacers </h1> 
-                <hr data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine" class="land_sec_hr">
-                <p style="color: rgb(0, 0, 0);text-align: left;" class="land_sec_desc " >
-                  Concreate is the pioneer in introducing a complete range of high standard <br/> 
-                  fibre reinforced concrete spacers in Sri Lanka. <br/> 
-                 
-              </p>
-
-              </div>
-            
-
+      <div class="carousel-caption" style="z-index: 8;position: absolute;left: 100px;bottom: 100px; width: 70%;" >
+        <div class="row land_sec_text " data-aos="fade-up">
+          <h1 data-aos="fade-up" data-aos-duration="1500" class="land_sec_heading ">Sri Lanka’s Finest Fibre <br>Reinforced Concrete Spacers </h1> 
+          <hr data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="land_sec_hr">
+          <p style="color: rgb(0, 0, 0);text-align: left;" class="land_sec_desc " >
+            Concreate is the pioneer in introducing a complete range of high standard <br/> 
+            fibre reinforced concrete spacers in Sri Lanka. <br/> 
+          </p>
         </div>
-      </div>
-    </div>
-  <!-- caption --></header>
+      </div>      
+    </header><!-- caption -->
 
   <img src="images/desktop_logo.png" class="top-logo" alt="Concrete lanka Logo">
   <svg class="arrows" style="z-index: 8;">
@@ -173,14 +160,24 @@
           <!-- The slideshow/carousel -->
           <div class="carousel-inner" style="height: 100vh;">
             <div class="carousel-item active">
-              <img src="images/wal_test3.png" alt="Concrete spacers" class="d-block" style="width:100%">
+              <picture class="d-block">
+                <source srcset="images/wal_mobile.png" media="(max-width: 600px)" >
+                <img src="images/wal_test3.png" alt="Concrete spacers"  style="width:100%;height: 100%;">
+              </picture>
             </div>
-            <div class="carousel-item">
-              <img src="images/wal_test4.png" alt="Concrete paving" class="d-block" style="width:100%">
-            </div> 
-            <div class="carousel-item">
-              <img src="images/wal_test.png" alt="Concrete flooring" class="d-block" style="width:100%">
+            <div class="carousel-item ">
+              <picture class="d-block">
+                <source srcset="images/wal_mobile.png" media="(max-width: 600px)" >
+                <img src="images/wal_test4.png" alt="Concrete spacers" style="width:100%;height: 100%;">
+              </picture>
             </div>
+            <div class="carousel-item ">
+              <picture class="d-block">
+                <source srcset="images/wal_mobile.png" media="(max-width: 600px)" >
+                <img src="images/wal_test.png" alt="Concrete flooring" style="width:100%;height: 100%;">
+              </picture>
+            </div>
+
           </div>
               
           <!-- Left and right controls/icons -->
@@ -308,7 +305,7 @@
   </div>
 
   <!-- homepage clients section -->
-      <div class="container clients_sec" data-aos="fade-up" data-aos-duration="1500">
+      <div class="container clients_sec" >
           <div class="row client_text" style="">
             
               <h1 data-aos="fade-up" data-aos-duration="1500">Our <span style="color: #898989;">Clientele</span></h1>
@@ -317,26 +314,16 @@
               data-aos-easing="ease-in-sine" style="" class="client_line hide_medium">
               <p data-aos="fade-up" data-aos-duration="2000" class="hide_medium" >- Our Clientele consist of local and international construction companies and our aim is to be their most preferred partner in construction materials and we assure on time delivery whilst maintaining high level of product stocks.</p>
                 <br>
-              
-            
-            
+
           </div>
         
           <div class="row">
             <div class="container">
-              
               <section class="customer-logos slider">
                   <div class="slide"><img src="images/client_logo1.png"></div>
                   <div class="slide"><img src="images/client_logo2.png"></div>
                   <div class="slide"><img src="images/client_logo3.png"></div>
                   <div class="slide"><img src="images/client_logo4.png"></div>
-                  <div class="slide"><img src="images/client_logo1.png"></div>
-                  <div class="slide"><img src="images/client_logo2.png"></div>
-                  <div class="slide"><img src="images/client_logo3.png"></div>
-                  <div class="slide"><img src="images/client_logo4.png"></div>
-                  <div class="slide"><img src="images/client_logo2.png"></div>
-                  <div class="slide"><img src="images/client_logo1.png"></div>
-                  
               </section>
               </div>
           </div>
@@ -442,87 +429,64 @@
       
         </div>
         <p   style="margin-left: 20px;font-weight: lighter; font-size: 10px;" class="inate hide_tablet">Craftmanship <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>
-      
-        
-        
-        
-        
-        
-        
         
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 footer_mob_padding">
-          <h1 data-aos="fade-up" data-aos-duration="1500">Project <span style="color: #898989;">Categories</span></h1>
-          
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 footer_mob_padding ">
+          <h1 data-aos="fade-up" data-aos-duration="1500" class="hide_medium">Project <span style="color: #898989;">Categories</span></h1>
         
-          <p data-aos="fade-up" data-aos-duration="2000" style="color: #A5A5A5;" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  "Lorem ipsum dolor sit amet,
-            consectetur adipisci ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+          <p data-aos="fade-up" data-aos-duration="2000" style="color: #A5A5A5;" >Our spacers fulfill the requirements of all exposure classes. All of our mix designs used are tested by independent testing institute with regards to the required properties. The mix designs used for the concrete spacers shall have a cube strength of 45N/mm at 28 days when cast cured and tested in accordance to BS 1881-108, BS 1881-111, we work with INSEE Cement and SIKA for as our strategic suppliers. We are in the process of obtaining ISO and NBRO product certification. We comply with BS 797312001. </p>
             <br>
             
           <ul data-aos="fade-up" data-aos-duration="2000">
+            <li>+94 773 31 3229 </li>
             <li>+94 293 21 1240</li>
-            <li>  +94 293 21 1240</li>
-            <li> +94 293 21 1240</li>
           </ul>
 
           <br> <p data-aos="fade-up" data-aos-duration="2000">
-            573/3,<br>
-  Ward place,<br>
-  Colmbo,<br>
-  Sri lanka.<br>
-  13200.
+            512/2/c<br>
+            Asiri Mawatha,<br>
+            Udumulla Road,<br>
+            Battramulla,<br>
+            Sri Lanka.
+              </p>
           </p>
-          <p data-aos="fade-up" data-aos-duration="2000" style="color: #A5A5A5;" >"Lorem ipsum dolor sit amet, consectetur adipisci ng elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
-            <br>
         
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in" data-aos-duration="2000">
-          <ul class="footer_link_list">
+          <ul class="footer_link_list hide_medium">
             <li><a data-text="1" href="index.html">Home</a></li>
             <li><a data-text="2" href="aboutus.html">About us </a></li>
             <li><a data-text="3" href="products.html"> Our Products</a></li>
             <li><a data-text="4" href="Projects.html">Our projects  </a></li>
             <li><a data-text="4" href="contact_us.html">contact us  </a></li>
-              
-            </ul>
+          </ul>
 
-            <img src="images/footer_pic.png" class="img-fluid footer_img"><br>
+          <img src="images/footer_pic.png" class="img-fluid footer_img hide_medium"><br>
 
-            <div class="wrapper">
-              <div class="icon facebook">
-                <div class="tooltip">Facebook</div>
-                <span><i class="fa fa-facebook-f"></i></span>
-              </div>
-        
-              <a href="https://www.instagram.com/concreatelanka/">  <div class="icon instagram">
-                <div class="tooltip">Instagram</div>
-                <span><i class="fa fa-instagram"></i></span>
-              </div></a>
-              <div class="icon github">
-                <div class="tooltip">Linked in</div>
-                <span><i class="fa fa-linkedin"></i></span>
-              </div>
-            
+          <div class="wrapper hide_medium">
+            <div class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fa fa-facebook-f"></i></span>
             </div>
-            
-            <p   style="margin-left: 20px;font-weight: lighter; font-size: 10px;" class="inate show_tablet">Craftmanship <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>
       
-        
+            <a href="https://www.instagram.com/concreatelanka/">  <div class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fa fa-instagram"></i></span>
+            </div></a>
+            <div class="icon github">
+              <div class="tooltip">Linked in</div>
+              <span><i class="fa fa-linkedin"></i></span>
+            </div>
           
-        
-        
-
+          </div>
+            
+          <p  style="margin-left: 20px;font-weight: lighter; font-size: 10px; " class="inate">Craftmanship <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>
+      
         </div>
         <div class="row">
-        <h3 style="text-align: center;font-size: 100%;">All rights reserved Concreate Lanka Pvt Ltd 2022</h3>
-      
+        <h3 style="text-align: center;font-size: 100%; padding: 0 56px;">All rights reserved Concreate Lanka Pvt Ltd 2022</h3>
         
-      
-      
-      
       </div>
       </div>
     </div>
@@ -661,11 +625,13 @@ function SubForm (){
 }
 </script>
 
+<!-- loading screen script -->
 <script>
   $(window).on("load",function(){
      $(".loader-wrapper").fadeOut("slow");
 });
 </script>
+<!-- loading screen script -->
 
 <!-- bootstrap script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -676,7 +642,7 @@ function SubForm (){
 <!-- aos script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({disable: 'mobile'});
   </script>
 <!-- aos script -->
 

@@ -61,11 +61,11 @@
 </head>
 <body>
   <img src="images/desktop_logo.png" class="top-logo" alt="Logo">
-  <div class="bigpadding contact_button"><a href="#section_footer">
+  <div class="bigpadding contact_button hide_medium"><a href="#section_footer">
     <button class="wt-btn_sign"><span class="wt-btn_sign-bound"><span data-width="#fff" data-text="Talk to us now!">Talk to us now!</span></span></button>
   </a>  </div>
 
-  <a href="#" id="call_me">
+  <a href="#" id="call_me" class="hide_medium">
     <img src="images/callmesvg.svg" alt="call" class="call_me_button" />
   </a>
   
@@ -107,7 +107,7 @@
 <!-- footer section -->
 
 <div id="section_footer" >
-  <div class="row footer_row footer_background" style="">
+  <div class="row footer_row footer_background" >
    
     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5"> 
     
@@ -154,7 +154,7 @@
         
       <ul data-aos="fade-right" data-aos-duration="2000">
         <li>+94 773 31 3229 </li>
-        <li>  +94 293 21 1240</li>
+        <li>+94 293 21 1240</li>
       </ul>
 
       <br> <p data-aos="fade-right" data-aos-duration="2000">
@@ -167,7 +167,7 @@
     
     </div>
 
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in" data-aos-duration="2000">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 hide_medium" data-aos="zoom-in" data-aos-duration="2000">
       <ul class="footer_link_list">
         <li><a data-text="1" href="index.html">Home</a></li>
         <li><a data-text="2" href="aboutus.html">About us </a></li>
@@ -197,20 +197,11 @@
         </div>
         
         <p   style="margin-left: 20px;font-weight: lighter; font-size: 10px;" class="inate show_tablet">Craftmanship <a href="https://www.instagram.com/inate.creative.labs/" style="font-weight: bold;"> @INATE </a> Creative Labs 2022</p>
-      
-        
-      
-     
-     
-
+    
     </div>
     <div class="row">
-    <h3 style="text-align: center;">All rights reserved 2022</h3>
+      <h3 style="text-align: center;font-size: 100%; padding: 0 56px;">All rights reserved Concreate Lanka Pvt Ltd 2022</h3>
    
-    
-  
-  
-  
   </div>
   </div>
 </div>
@@ -249,7 +240,7 @@ function SubForm (){
 <!-- aos script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({disable: 'mobile'});
   </script>
 <!-- aos script -->
 
