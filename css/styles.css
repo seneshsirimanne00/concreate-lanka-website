@@ -559,6 +559,7 @@ div#quad figure {
 }
 div#quad figure:hover { cursor: pointer; z-index: 4; }
 div#quad figure img { width: 100%; height: auto; }
+div#quad figure img:hover {border: 4px solid #292A77;}
 div#quad figure:nth-child(1) { transform-origin: top left; }
 div#quad figure:nth-child(2) { transform-origin: top right; }
 div#quad figure:nth-child(3) { transform-origin: bottom left; }
