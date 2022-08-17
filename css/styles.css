@@ -1463,6 +1463,7 @@ right: -29px
 
 
 
+
 .wrapper {
   display: inline-flex;
   position:absolute;
@@ -1865,7 +1866,89 @@ padding:0 22px;
 }
 
 
+.navMenu {
+  position: absolute;
+  top:20px;
+  left: 50%;
+
+}
+
+.navMenu a {
+  color: #9b9b9b;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #292A77;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #292A77;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(155px);
+  transform: translateX(155px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(470px);
+  transform: translateX(470px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(5):hover ~ .dot {
+  -webkit-transform: translateX(630px);
+  transform: translateX(630px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
 
 
 
-
+.logo_circle_desktop{
+  position: absolute;
+  top: -100px;
+  left: -10px;
+  width: 260px;
+  
+  z-index: 8;
+}

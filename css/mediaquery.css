@@ -19,6 +19,13 @@
        padding-bottom: 25px
     }
 
+    .desktop_nav{
+        display: block;
+    }
+
+    .mobile_nav{
+        display: none;
+    }
 
 }
 
@@ -31,7 +38,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1280px) {
-
+    .navMenu {
+     left: 40%;
+      
+      }
 
 
 }
@@ -46,6 +56,11 @@
         display: none;
     }
 
+    .navMenu {
+        left: 35%;
+         
+         }
+
 
 }
 
@@ -53,6 +68,10 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1024px) {
 
+    .navMenu {
+        left: 27%;
+         
+         }
 
 
 }
@@ -62,6 +81,14 @@
 
     .hide_medium{
         display: none !important;
+    }
+
+    .desktop_nav{
+        display: none !important;
+    }
+
+    .mobile_nav{
+        display: block !important;
     }
 
 
