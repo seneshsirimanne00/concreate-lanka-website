@@ -60,7 +60,22 @@
 <!-- AOS css -->
 </head>
 <body>
-  <img src="images/desktop_logo.png" class="top-logo" alt="Logo">
+
+  <img src="images/nav_circle_desktop.png" class="logo_circle_desktop desktop_nav " alt="Concrete lanka Logo circle">
+ 
+  <div class="container desktop_nav " style="margin-bottom: 60px; margin-top: 30px; width: 100vw;">
+    <nav class="navMenu">
+      <a href="index.html">Home</a> 
+      <a style="color:#292A77 ;" href="aboutus.html">About us</a> 
+      <a href="products.html">Our Products</a> 
+      <a href="Projects.html">Our Projects</a> 
+      <a href="contact_us.html">Contact us</a>
+      <div class="dot"></div>
+    </nav>
+  </div>
+
+  <a href="index.html" style="cursor:pointer;z-index: 10000000;"><span><img src="images/desktop_logo.png" class="top-logo" alt="Concrete lanka Logo"></span></a>
+
   <div class="bigpadding contact_button hide_tablet"><a href="#section_footer">
     <button class="wt-btn_sign"><span class="wt-btn_sign-bound"><span data-width="#fff" data-text="Talk to us now!">Talk to us now!</span></span></button>
   </a>  </div>
@@ -76,7 +91,7 @@
     </svg>
   </b>
   </button>
-  <div id="wrapper">
+  <div id="wrapper" class="mobile_nav">
     
     <button class="navbar-toggle" id="toggle" type="button">
   <svg viewBox="0 0 100 100" width="60">
@@ -180,6 +195,7 @@
 
 <!-- about us section -->
 <h1 data-aos="fade-up" data-aos-duration="1500" style="text-align: center; margin-top: 40px;">Our <span style="color: #898989;">Team</span></h1>
+<hr data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"  class="client_line">
 <div class="container_team" data-aos="fade-up" data-aos-duration="1500">
        
   <div class="row" style="justify-content: center; margin-bottom: 30px;">
@@ -208,7 +224,7 @@
         <img src="images/indika.png" alt="">    
       </div>
       <div class="content_team">
-        <h2>indika</br>
+        <h2>Indika</br>
         <span>Marketing Manager</span></h2>
       </div>
     </div>
@@ -218,7 +234,7 @@
         <img src="images/niroshan.png" alt="">    
       </div>
       <div class="content_team">
-        <h2>niroshan</br>
+        <h2>Niroshan</br>
         <span>Sales Executive</span></h2>
       </div>
     </div>
@@ -228,7 +244,7 @@
         <img src="images/debora.png" alt="">    
       </div>
       <div class="content_team">
-        <h2>debora</br>
+        <h2>Debora</br>
         <span>Sales Executive</span></h2>
     </div>
 
@@ -391,7 +407,7 @@ function SubForm (){
 <!-- aos script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({disable: 'mobile'});
+    AOS.init();
   </script>
 <!-- aos script -->
 

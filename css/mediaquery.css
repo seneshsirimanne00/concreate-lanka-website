@@ -107,6 +107,10 @@
     margin-top: 200px;
   }
 
+  .product_price_prev, .product_price_next {
+    color: #898989;
+  }
+
 .products_page_top_heading{
     margin-top: 110px;
 }
@@ -266,13 +270,13 @@
     }
     .land_sec_text {
         position: relative;
-        bottom: -37px;
+        bottom: 32px;
         left: -56px;
     
     }
 
     .land_sec_heading{
-        font-size: 45px;
+        font-size: 32px;
       }
 
     .product-text {

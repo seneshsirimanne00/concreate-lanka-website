@@ -60,7 +60,21 @@
 <!-- AOS css -->
 </head>
 <body>
-  <img src="images/desktop_logo.png" class="top-logo" alt="Concrete lanka Logo">
+
+  <img src="images/nav_circle_desktop.png" class="logo_circle_desktop desktop_nav " alt="Concrete lanka Logo circle">
+ 
+  <div class="container desktop_nav " style="margin-bottom: 60px; margin-top: 30px; width: 100vw;">
+    <nav class="navMenu">
+      <a href="index.html">Home</a> 
+      <a href="aboutus.html">About us</a> 
+      <a style="color:#292A77 ;" href="products.html">Our Products</a> 
+      <a href="Projects.html">Our Projects</a> 
+      <a href="contact_us.html">Contact us</a>
+      <div class="dot"></div>
+    </nav>
+  </div>
+
+  <a href="index.html" style="cursor:pointer;z-index: 10000000;"><span><img src="images/desktop_logo.png" class="top-logo" alt="Concrete lanka Logo"></span></a>
   <div class="bigpadding contact_button hide_tablet"><a href="#section_footer">
     <button class="wt-btn_sign"><span class="wt-btn_sign-bound"><span data-width="#fff" data-text="Talk to us now!">Talk to us now!</span></span></button>
   </a>  </div>
@@ -76,7 +90,7 @@
     </svg>
   </b>
   </button>
-  <div id="wrapper">
+  <div id="wrapper" class="mobile_nav">
     
     <button class="navbar-toggle" id="toggle" type="button">
   <svg viewBox="0 0 100 100" width="60">
@@ -570,7 +584,7 @@ function SubForm (){
 <!-- aos script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({disable: 'mobile'});
+    AOS.init();
   </script>
 <!-- aos script -->
 
