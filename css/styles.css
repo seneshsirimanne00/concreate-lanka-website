@@ -1674,6 +1674,7 @@ right: -29px
   line-height: 2.6;
   font-weight: 500;
   color: #18194a;
+  width: 200px
 }
 
 .box1:hover { flex: 1 1 50%; }
