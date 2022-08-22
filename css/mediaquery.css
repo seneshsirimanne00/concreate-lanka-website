@@ -147,6 +147,14 @@
     flex-direction: column;
 }
 
+.projects_header{
+    font-size: 9px;
+  }
+  
+  .projects_caption{
+    font-size: 7px;
+  }
+
 .hide_tablet{
     display: none !important;
 }
@@ -164,6 +172,10 @@
     border-left: 0px solid black;
 }
 
+.home_clientele{
+    text-align: justify;
+  }
+
 .copyRight_text{
     font-size: medium;
     padding: 30px 62px;
@@ -172,6 +184,7 @@
 .certification_aboutus{
     flex-direction: column;
     padding: 0;
+    align-items: center;
 }
 
 .about_sec_text_section {
@@ -204,6 +217,7 @@
 
 .certi_aboutus {
     padding: 20px;
+    width: 220px;
 }
 
 .about_us_first_t {

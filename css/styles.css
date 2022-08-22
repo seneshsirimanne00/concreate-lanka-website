@@ -7,6 +7,10 @@ html{
 
 }
 
+img{
+  pointer-events: none;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
   background-color: #868686; 
@@ -612,7 +616,7 @@ div#quad figure:nth-child(3) { transform-origin: bottom left; }
 div#quad figure:nth-child(4) { transform-origin: bottom right; }
 div#quad figure figcaption { 
   margin: 0; opacity: 0; 
-  background: rgba(0,0,0,0.3); 
+  background: rgba(0, 0, 0, 0.738); 
   color: #fff; padding: .3rem; 
   font-size: 1.2rem; 
   position: absolute; 
@@ -637,7 +641,22 @@ position: relative;
 left: 250px;
 padding-top: 100px;
 
+}
 
+.projects_header{
+  font-size: 18px;
+  margin: 0;
+}
+
+.projects_caption{
+  font-size: 13px;
+  color:white; 
+  text-align:left;
+  margin: 0;
+}
+
+.home_clientele{
+  text-align: center;
 }
 
 .parallax {
@@ -779,6 +798,17 @@ input[type=text], select, textarea {
  color: #fff;
  border-radius: 60%;
  
+}
+
+.footerMap{
+  text-decoration: none;
+  color: #292A77;
+}
+
+.footerText{
+  text-decoration: none;
+  color: #070715;
+  font-weight: 600;
 }
 
 .footer_social{
@@ -1938,14 +1968,34 @@ padding:0 22px;
   border-top: 1px solid #ccc;
 }
 
-/*
- Demo purposes only
-*/
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
+/* css custom animation */
+
+.appear-disappear{ 
+  animation: opacityOnAndOff 1s normal forwards step-end;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes opacityOnAndOff {
+  0% {
+      opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
+/* css custom animation */
 
 
 .navMenu {
