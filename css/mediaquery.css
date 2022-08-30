@@ -246,6 +246,11 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 767px) {
 
+    p {
+        color: #2F2B2B;
+        font-weight: 400;
+    }
+
     .contact_input {
         width: 100%;}
     
