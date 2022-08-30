@@ -4,6 +4,12 @@
 
 /*==========  Non-Mobile First Method  ==========*/
 
+@media only screen and (max-width : 4000px) {
+    .show_tablet{
+        display: none;
+    }
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1920px) {
     .footer_background{
