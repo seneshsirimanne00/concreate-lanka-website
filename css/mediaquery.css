@@ -4,6 +4,12 @@
 
 /*==========  Non-Mobile First Method  ==========*/
 
+@media only screen and (max-width : 4000px) {
+    .show_tablet{
+        display: none;
+    }
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1920px) {
     .footer_background{
@@ -71,9 +77,12 @@
     .navMenu {
         left: 27%;
          
-         }
+    }
 
 
+    .product-text h1{
+        margin-top:2vw;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -105,6 +114,10 @@
 
               .products_page_top_heading{
     margin-top: 200px;
+  }
+
+  .product_price_prev, .product_price_next {
+    color: #898989;
   }
 
 .products_page_top_heading{
@@ -143,6 +156,14 @@
     flex-direction: column;
 }
 
+.projects_header{
+    font-size: 9px;
+  }
+  
+  .projects_caption{
+    font-size: 7px;
+  }
+
 .hide_tablet{
     display: none !important;
 }
@@ -160,6 +181,10 @@
     border-left: 0px solid black;
 }
 
+.home_clientele{
+    text-align: justify;
+  }
+
 .copyRight_text{
     font-size: medium;
     padding: 30px 62px;
@@ -168,11 +193,17 @@
 .certification_aboutus{
     flex-direction: column;
     padding: 0;
+    align-items: center;
 }
 
 .about_sec_text_section {
     padding-top: 40px;
 }
+
+.parallax h2 {
+    font-size: 45px;
+    padding: 10px;
+  }
 
 /* about us page */
 
@@ -200,6 +231,7 @@
 
 .certi_aboutus {
     padding: 20px;
+    width: 220px;
 }
 
 .about_us_first_t {
@@ -207,10 +239,23 @@
     font-size: 20px;
 }
 
+.prod_img{
+    width:unset;
+  }
+
+.flip_mobile{
+    flex-direction: column-reverse;
+}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 767px) {
+
+    p {
+        color: #2F2B2B;
+        font-weight: 400;
+    }
 
     .contact_input {
         width: 100%;}
@@ -255,7 +300,7 @@
 
     .client_text {
         text-align: justify;
-        width: 300px;
+        width: 96vw;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -266,17 +311,35 @@
     }
     .land_sec_text {
         position: relative;
-        bottom: -37px;
+        bottom: 32px;
         left: -56px;
     
     }
 
-    .land_sec_heading{
-        font-size: 45px;
+    .land_sec_desc{
+        max-width: unset
+        
       }
+
+    .land_sec_heading{
+        font-size: 5vw;
+        width: unset;
+      } 
 
     .product-text {
         padding: 29px;
+    }
+
+    .carousel-caption{
+        bottom: 13vh; 
+      }
+
+    .product-row {
+        margin-bottom: 0px;
+    }
+
+    .projects_row {
+        padding-top: 0px;
     }
 
 
@@ -301,6 +364,10 @@
     .footer_mob_padding {
         padding: 10px 63px;
     }
+
+    .land_sec_heading{
+        font-size: 8vw;
+      } 
 
 
 }
@@ -331,4 +398,33 @@
 
 
 
+}
+
+/* special exceptions media queries */
+
+@media only screen and (max-width : 1169px) {
+
+.sidebar{
+    display:none !important;
+}
+
+}
+
+@media only screen and (max-width : 1400px) {
+
+    .product_price_prev_img, .product_price_next_img{
+        display:none !important;
+    }
+    
+}
+
+@media only screen and (max-height : 552px) {
+
+    .land_sec_heading{
+        font-size: 6vw;
+      }
+    
+      .land_sec_desc{
+        font-size: 4vw;
+      }
 }

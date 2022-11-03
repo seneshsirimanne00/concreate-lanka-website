@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -62,15 +63,28 @@
 <body>
   <!-- inner background -->
 
+  <img src="images/nav_circle_desktop.png" class="logo_circle_desktop desktop_nav " alt="Concrete lanka Logo circle">
+ 
+  <div class="container desktop_nav " style="margin-bottom: 60px; margin-top: 30px; width: 100vw;">
+    <nav class="navMenu">
+      <a  href="index.html">Home</a> 
+      <a href="aboutus.html">About us</a> 
+      <a style="color:#292A77 ;" href="products.html">Our Products</a> 
+      <a href="Projects.html">Our Projects</a> 
+      <a href="contact_us.html">Contact us</a>
+      <div class="dot"></div>
+    </nav>
+  </div>
+
 <div class="inner_back">
   
-  <img src="images/desktop_logo.png" class="top-logo" alt="Concrete lanka">
+  <a href="index.html" style="cursor:pointer;z-index: 10000000;"><span><img src="images/desktop_logo.png" class="top-logo" alt="Concrete lanka Logo"></span></a>
 
   <div class="bigpadding contact_button hide_tablet"><a href="#section_footer">
     <button class="wt-btn_sign"><span class="wt-btn_sign-bound"><span data-width="#fff" data-text="Talk to us now!">Talk to us now!</span></span></button>
   </a>  </div>
 
-  <a href="#" id="call_me" class="hide_tablet">
+  <a href="tel:+94 773 31 3229" id="call_me" class="hide_tablet">
     <img src="images/callmesvg.svg" alt="call" class="call_me_button" />
   </a>
   
@@ -81,6 +95,7 @@
       </svg>
     </b>
   </button> 
+  <div id="wrapper" class="mobile_nav">
     <button class="navbar-toggle" id="toggle" type="button">
       <svg viewBox="0 0 100 100" width="60">
         <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
@@ -89,25 +104,24 @@
       </svg>
       <!-- <span style="position: relative; top: -27px; font-family: Stag; left: -13px;"><b>MENU</b></span> -->
     </button>
-    <div class="navbar">
+    <div class="navbar ">
       <ul>
         <li><a data-text="1" href="index.html">Home</a></li>
         <li><a data-text="2" href="aboutus.html">About us </a></li>
         <li><a data-text="3" href="products.html"> Our Products</a></li>
         <li><a data-text="4" href="Projects.html">Our projects  </a></li>
         <li><a data-text="4" href="contact_us.html">contact us  </a></li>
-          
         </ul>
     </div>
     <div id="bg-circle"></div>
-  
-
-  <div id="sidebar" class="hide_tablet">
-    <a href="#concrete-spacers" class="home">Concrete spacers</a><br>
-    <a href="#concrete-paving">Concrete paving</a><br>
-    <a href="#concrete-flooring">Concrete flooring</a><br>
-    <a href="#clay-bricks">Clay brick</a><br> 
   </div>
+<!-- 
+    <div id="sidebar" class="hide_tablet">
+      <a href="#concrete-spacers" class="home">Concrete spacers</a><br>
+      <a href="#concrete-paving">Concrete paving</a><br>
+      <a href="#concrete-flooring">Concrete flooring</a><br>
+      <a href="#clay-bricks">Clay brick</a><br> 
+    </div> -->
 
   
 
@@ -362,13 +376,13 @@
               <div class="top-card-content" class="img-fluid products_page_top_img" data-aos="fade-up" data-aos-duration="1500">
                 <a href="#concrete-spacers">
                   <div class="top-card-content-overlay"></div>
-                  <h4 class="top-card-content-main-title" >Concrete spacers</h4>
+                  <h4 class="top-card-content-main-title" >Concrete spacers <img style="height:30px ;" src="/images/tap.png" alt="hover"></h4>
                   <img  class="top-card-content-image" src="images/paving.jpeg" >
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Concrete spacers</h5>
                     <p class="top-card-content-text">Concreate is the pioneer in introducing a complete range of high standard fibre reinforced
                        concrete spacers for the rapidly growing construction industry in sri lanka.</p>
-                       <h6 style="color: white;">Learn More</h6>
+                       <h6 style="color: white;">▼ Go to Spacers ▼</h6>
                   </div>
                 </a>
               </div>
@@ -378,12 +392,12 @@
               <div class="top-card-content" class="img-fluid products_page_top_img" data-aos="fade-up" data-aos-duration="1500">
                 <a href="#concrete-paving">
                   <div class="top-card-content-overlay"></div>
-                  <h4 class="top-card-content-main-title" >Concrete paving</h4>
+                  <h4 class="top-card-content-main-title" >Concrete paving <img style="height:30px ;" src="/images/tap.png" alt="hover"></h4>
                   <img  class="top-card-content-image" src="images/paving2.png">
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Concrete paving</h5>
                     <p class="top-card-content-text">We are with experienced laying team who have more than 10 years of experience specializing in block paving. We pride ourselves on providing top quality workmanship at reasonable and affordable prices. From small pathways to vast industrial parking areas and we are happy to discuss any of your requirements with you and give you our best advice on products and designs available to you, including tarmac options.</p>
-                    <h6 style="color: white;">Learn More</h6>
+                    <h6 style="color: white;">▼ Go to Paving ▼</h6>
                   </div>
                 </a>
               </div>
@@ -394,12 +408,12 @@
               <div class="top-card-content" class="img-fluid products_page_top_img" data-aos="fade-up" data-aos-duration="1500">
                 <a href="#concrete-flooring">
                   <div class="top-card-content-overlay"></div>
-                  <h4 class="top-card-content-main-title" >Concrete Flooring</h4>
+                  <h4 class="top-card-content-main-title" >Concrete Flooring <img style="height:30px ;" src="/images/tap.png" alt="hover"></h4>
                   <img  class="top-card-content-image" src="images/flooring3.jpg">
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Cement/Concrete Flooring</h5>
                     <p class="top-card-content-text">Concrete flooring is a smooth hardwearing flooring solution, suitable across  home and commercial/industrial settings.  You can select practically any specific colour, design variations, or simply add aggregates into the concrete floor just before polishing.  concrete floors offer the look of marble in your living room or a deep blue concrete floor throughout a hotel lobby.</p>
-                    <h6 style="color: white;">Learn More</h6>
+                    <h6 style="color: white;">▼ Go to Flooring ▼</h6>
                   </div>
                 </a>
               </div>
@@ -409,12 +423,12 @@
               <div class="top-card-content" class="img-fluid products_page_top_img" data-aos="fade-up" data-aos-duration="1500">
                 <a href="#clay-bricks">
                   <div class="top-card-content-overlay"></div>
-                  <h4 class="top-card-content-main-title" >Clay bricks</h4>
+                  <h4 class="top-card-content-main-title" >Clay bricks <img style="height:30px ;" src="/images/tap.png" alt="hover"></h4>
                   <img  class="top-card-content-image" src="images/bricks.jpeg">
                   <div class="top-card-content-details fadeIn-bottom">
                     <h5 class="top-card-content-title">Clay bricks</h5>
                     <p class="top-card-content-text">brick is one of the world’s oldest “green” products. In addition to being one of the most aesthetically versatile design products, brick provides many functional benefits in a building envelope. Besides being fireproof, insect-proof, low-maintenance, and a natural insulator, brick is also 100% recyclable. we supply bricks from the best factories including Dankotuwa, Ampara,Anamaduwa for internal use. we comply with the strength class and water absorption of SLS 39; 1978.</p>
-                    <h6 style="color: white;">Learn More</h6>
+                    <h6 style="color: white;">▼ Go to Bricks ▼</h6>
                   </div>
                 </a>
               </div>
@@ -433,7 +447,7 @@
           <div class="row products_page_section_two">
             <h1 data-aos="fade-up" data-aos-duration="1500">Fibre reinforced concrete spacers</h1>
                 <br>
-              <p  data-aos="fade-up" data-aos-duration="2000">Concreate is the pioneer in introducing a complete range of high standard fibre reinforced concrete spacers for the rapidly growing construction industry in sri lanka. In compliance with international and local standards /regulations we test our products regularly at reputed domestic and international material testing laboratories (BS 7973) We have a semi-automatic purpose build environment friendly factory with in-house testing facility. larger array of casting molds enables us to fulfil your total range of reinforced concrete needs. </p>
+              <p  data-aos="fade-up" data-aos-duration="2000">Concreate is the pioneer in introducing a complete range of high standard fibre reinforced concrete spacers for the rapidly growing construction industry in sri lanka. In compliance with international and local standards / regulations we test our products regularly at reputed domestic and international material testing laboratories (BS 7973) We have a semi-automatic purpose build environment friendly factory with in-house testing facility. larger array of casting molds enables us to fulfil your total range of reinforced concrete needs. </p>
               <br>
           </div>
     <!-- Slab spacer slider begining -->
@@ -450,7 +464,7 @@
                 <div class="row">
                     <div class="product_price_slideshow-container">
 
-                      <div class="product_price_numbertext2">Click to see products</div><div class="product_price_text2"></div>
+                      <div class="product_price_numbertext2">Click arrows to see products</div><div class="product_price_text2"></div>
                       <a class="product_price_prev" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                       <a class="product_price_next" onclick="plusSlidestwo(1)">&#10095;</a>
                       
@@ -458,7 +472,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid" data-aos="fade-up" data-aos-duration="2000">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/spacers22.png" class="img-fluid products_page_top_img slab"  alt="Spacers"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -481,7 +497,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0042.jpg" class="img-fluid products_page_top_img slab"  alt="spacers 15mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -502,7 +520,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0035.jpg" class="img-fluid products_page_top_img slab"  alt="spacers 100mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -523,7 +543,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0015.jpg" class="img-fluid products_page_top_img slab"  alt="spacer 60mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -544,7 +566,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0017.jpg" class="img-fluid products_page_top_img slab"  alt="spacer 75mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -565,7 +589,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0019.jpg" class="img-fluid products_page_top_img slab"  alt="spacer 80mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -586,7 +612,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0021.jpg" class="img-fluid products_page_top_img slab"  alt="spacer 110mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -607,7 +635,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0023.jpg" class="img-fluid products_page_top_img slab"  alt="spacer 120mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -628,7 +658,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0024.jpg" class="img-fluid products_page_top_img slab"  alt="spacer 105mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -649,7 +681,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0029.jpg" class="img-fluid products_page_top_img slab"  alt="spacer 70mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -670,7 +704,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0030.jpg" class="img-fluid products_page_top_img slab"  alt="spacer 25mm"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -691,7 +727,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0036.jpg" class="img-fluid products_page_top_img slab"  alt="..."  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
             
@@ -712,7 +750,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0037.jpg" class="img-fluid products_page_top_img slab"  alt="..."  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
             
@@ -733,7 +773,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0038.jpg" class="img-fluid products_page_top_img slab"  alt="..."  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -755,7 +797,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0039.jpg" class="img-fluid products_page_top_img slab"  alt="..."  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
             
@@ -776,7 +820,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0045.jpg" class="img-fluid products_page_top_img slab"  alt="concrete spacer"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
 
@@ -797,7 +843,9 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                  <a class="product_price_prev_img hide_medium" onclick="plusSlidestwo(-1)" style="size: 50px;">&#10094;</a>
                   <img  src="images/_MG_0047.jpg" class="img-fluid products_page_top_img slab"  alt="concrete spacer"  data-aos-duration="1500">
+                  <a class="product_price_next_img hide_medium" onclick="plusSlidestwo(1)">&#10095;</a>
                 </div>
             </div> 
       <!-- Slab spacer slider end -->
@@ -835,9 +883,11 @@
           <!-- beam spacer start --> 
           <div class="row products_page_product_card">
 
-            <div class="product_price_mySlidesthree">
+            <div class="product_price_mySlidesthree flip_mobile" >
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesthree(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/beam spacers.png" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesthree(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
@@ -857,9 +907,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlidesthree">
+            <div class="product_price_mySlidesthree flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesthree(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0041.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesthree(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
@@ -879,9 +931,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlidesthree">
+            <div class="product_price_mySlidesthree flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesthree(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0046.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesthree(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
@@ -900,9 +954,11 @@
                 </div>
               </div>
             </div>
-            <div class="product_price_mySlidesthree">
+            <div class="product_price_mySlidesthree flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesthree(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0044.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesthree(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
@@ -921,9 +977,11 @@
                 </div>
               </div>
             </div>
-            <div class="product_price_mySlidesthree">
+            <div class="product_price_mySlidesthree flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesthree(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0046.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesthree(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
@@ -942,9 +1000,11 @@
                 </div>
               </div>
             </div>
-            <div class="product_price_mySlidesthree">
+            <div class="product_price_mySlidesthree flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesthree(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0048.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesthree(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">BEAM SPACER</h3>
@@ -1007,14 +1067,16 @@
                   <br>
                 <div class="row price_slideshow">
                   <div class="product_price_slideshow-container">
-                    <div class="product_price_numbertext">Click to see products</div><div class="product_price_text"></div>
+                    <div class="product_price_numbertext">Click arrows to see products</div><div class="product_price_text"></div>
                     <a class="product_price_prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="product_price_next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlides(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/circularspacer.png" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1034,7 +1096,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlides(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0050.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1054,7 +1118,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlides(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0051.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1074,7 +1140,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlides(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0052.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1094,7 +1162,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlides(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0053.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1114,7 +1184,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlides(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0054.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1134,7 +1206,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlides(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0075.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1154,7 +1228,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlides(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0077.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlides(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1192,9 +1268,11 @@
           <!-- slab spacers starts --> 
           <div class="row products_page_product_card">
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/squar spacers.png" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1206,7 +1284,7 @@
                   <br>
                   <div class="row price_slideshow">
                     <div class="product_price_slideshow-container">
-                      <div class="product_price_numbertext1">Click to see products</div><div class="product_price_text1"></div>
+                      <div class="product_price_numbertext1">Click arrows to see products</div><div class="product_price_text1"></div>
                       <a class="product_price_prev" onclick="plusSlidesone(-1)">&#10094;</a>
                       <a class="product_price_next" onclick="plusSlidesone(1)">&#10095;</a>  
                     </div>
@@ -1215,9 +1293,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0058.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1238,9 +1318,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0061.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1261,9 +1343,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0059.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1284,9 +1368,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0063.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1307,9 +1393,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0066.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1330,9 +1418,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0071.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1353,9 +1443,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0070.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1376,9 +1468,11 @@
               </div>
             </div>
 
-            <div class="product_price_mySlides1">
+            <div class="product_price_mySlides1 flip_mobile">
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesone(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0068.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer" data-aos="fade-up" data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesone(1)">&#10095;</a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  products_page_product_card_text_part">
                 <h3 data-aos="fade-up" data-aos-duration="1500" style="color: #898989;">SQUARE BAR SPACER</h3>
@@ -1441,14 +1535,16 @@
                   <br>
                 <div class="row" >
                   <div class="product_price_slideshow-container">
-                    <div class="product_price_numbertext4">Click to see products </div><div class="product_price_text4"></div>
+                    <div class="product_price_numbertext4">Click arrows to see products </div><div class="product_price_text4"></div>
                     <a class="product_price_prev" onclick="plusSlidesfour(-1)">&#10094;</a>
                     <a class="product_price_next" onclick="plusSlidesfour(1)">&#10095;</a> 
                     </div>
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid" data-aos="fade-up" data-aos-duration="2000">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesfour(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/mesh spacers.png" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesfour(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1468,7 +1564,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesfour(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0031.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesfour(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1488,7 +1586,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesfour(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0033.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesfour(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1508,7 +1608,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesfour(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0034.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesfour(1)">&#10095;</a>
               </div>
             </div>
 
@@ -1529,7 +1631,9 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6  mid">
+                <a class="product_price_prev_img hide_medium" onclick="plusSlidesfour(-1)" style="size: 50px;">&#10094;</a>
                 <img  src="images/_MG_0032.jpg" class="img-fluid products_page_top_img slab" alt="concrete spacer"  data-aos-duration="1500">
+                <a class="product_price_next_img hide_medium" onclick="plusSlidesfour(1)">&#10095;</a>
               </div>
             </div>
 
@@ -2024,7 +2128,7 @@ function SubForm (){
 <!-- aos script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({disable: 'mobile'});
+    AOS.init();
   </script>
 <!-- aos script -->
 
@@ -2052,10 +2156,10 @@ function SubForm (){
     function scrollFunction() {
       if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 10) {
         mybutton.style.display = "block";
-        sidebar.style.display = "block";
+        //sidebar.style.display = "block";
       } else {
         mybutton.style.display = "none";
-        sidebar.style.display = "none";
+        //sidebar.style.display = "none";
       }
     }
     
